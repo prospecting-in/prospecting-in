@@ -2109,11 +2109,6 @@ body,
   margin-bottom: 30px;
 }
 
-.features-area.shadow-less .features-items .equal-height {
-  margin-top: 60px;
-  margin-bottom: 0;
-}
-
 .features-area.shadow-less .features-items .equal-height:first-child, 
 .features-area.shadow-less .features-items .equal-height:nth-child(2) {
   margin-top: 0;
@@ -2139,16 +2134,6 @@ body,
 .features-area.shadow-less .features-items .equal-height {
   position: relative;
   z-index: 1;
-}
-
-.features-area.shadow-less .features-items .equal-height::after {
-  position: absolute;
-  left: 0;
-  bottom: -30px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background: #e7e7e7;
 }
 
 .features-area.shadow-less .features-items .item .icon i {

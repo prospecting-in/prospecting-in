@@ -639,10 +639,10 @@
 
 
   /* Features */
-  .features-area.shadow-less .features-items .equal-height:nth-child(2) {
+ /* .features-area.shadow-less .features-items .equal-height:nth-child(2) {
     margin-top: 30px;
     padding-top: 30px;
-  }
+  }*/
 
   .features-area .thumb {
     margin-top: 30px;
