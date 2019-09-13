@@ -3574,16 +3574,6 @@ body,
   line-height: 30px;
 }
 
-.address-list .single-item::after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  content: "";
-  height: 150%;
-  width: 1px;
-  background: #e7e7e7;
-}
-
 .address-list .single-item:last-child::after {
   display: none;
 }
