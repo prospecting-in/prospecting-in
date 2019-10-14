@@ -65,6 +65,7 @@
     padding: 5px;
 }
 </style>
+
 <style type="text/css" scoped>
     .mauticform_wrapper { max-width: 600px; margin: 10px auto; }
     .mauticform-innerform {}
@@ -108,6 +109,7 @@
         }
     }
 </script>
+
 
 
 </head>
@@ -842,6 +844,7 @@
           <div class="site-heading text-center">
             <h2>Contact Us</h2>
 
+
 <div id="mauticform_wrapper_prospectingincontactform" class="mauticform_wrapper">
     <form autocomplete="false" role="form" method="post" action="https://app.prospecting.in/form/submit?formId=1" id="mauticform_prospectingincontactform" data-mautic-form="prospectingincontactform" enctype="multipart/form-data">
         <div class="mauticform-error" id="mauticform_prospectingincontactform_error"></div>
@@ -866,7 +869,12 @@
                 <span class="mauticform-errormsg" style="display: none;">Please fill in your email address</span>
             </div>
 
-            <div id="mauticform_prospectingincontactform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-4">
+            <div id="mauticform_prospectingincontactform_f_message" data-validate="f_message" data-validation-type="textarea" class="mauticform-row mauticform-text mauticform-field-4 mauticform-required">
+                <textarea id="mauticform_input_prospectingincontactform_f_message" name="mauticform[f_message]" class="mauticform-textarea"></textarea>
+                <span class="mauticform-errormsg" style="display: none;">Please fill in a message</span>
+            </div>
+
+            <div id="mauticform_prospectingincontactform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-5">
                 <button type="submit" name="mauticform[submit]" id="mauticform_input_prospectingincontactform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
             </div>
             </div>
@@ -878,6 +886,7 @@
 
         </form>
 </div>
+
 
           </div>
         </div>
