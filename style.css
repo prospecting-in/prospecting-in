@@ -2657,10 +2657,10 @@ body,
 
 .team-area .team-items .item:hover .thumb img {
   opacity: 0.2;
-  -webkit-transform: scale(1.1);
+/*  -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1);*/
 }
 
 .team-area .team-items .item .info ul li {
@@ -2695,7 +2695,7 @@ body,
 }
 
 .team-area.radius-less .team-items .item .thumb img {
-  border-radius: inherit;
+  border-radius: 100%;
 }
 
 .team-area.radius-less .team-items .item .info {
