@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148337699-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-148337699-1');
@@ -48,81 +48,240 @@
   <!-- ========== Google Fonts ========== -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
-<style>
-.pricing-area .pricing-item li i {
-    margin-right: 5px;
-    color: #2568ef;
-    margin-left: 10px;
-}
+  <style>
+    .pricing-area .pricing-item li i {
+      margin-right: 5px;
+      color: #2568ef;
+      margin-left: 10px;
+    }
 
-.feature-box .site-heading p {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 10px;
-}
-.site-heading {
-    box-sizing: border-box;
-    padding: 5px;
-}
-.team-area.radius-less .team-items .item .thumb {
-    border-radius: inherit;
-    padding: 35px;
-}
-.testimonial-items .item .thumb {
-    height: 250px;
-    width: 250px;
-}
-</style>
+    .feature-box .site-heading p {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 10px;
+    }
 
-<style type="text/css" scoped>
-    .mauticform_wrapper { max-width: 600px; margin: 10px auto; }
+    .site-heading {
+      box-sizing: border-box;
+      padding: 5px;
+    }
+
+    .team-area.radius-less .team-items .item .thumb {
+      border-radius: inherit;
+      padding: 35px;
+    }
+
+    .testimonial-items .item .thumb {
+      height: 250px;
+      width: 250px;
+    }
+  </style>
+
+  <style type="text/css" scoped>
+    .mauticform_wrapper {
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
     .mauticform-innerform {}
+
     .mauticform-post-success {}
-    .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
-    .mauticform-description { margin-top: 2px; margin-bottom: 10px; }
-    .mauticform-error { margin-bottom: 10px; color: red; }
-    .mauticform-message { margin-bottom: 10px;color: green; }
-    .mauticform-row { display: block; margin-bottom: 20px; }
-    .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }
-    .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
-    .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
-    .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
-    .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; border-radius: 4px; box-sizing: border-box; }
+
+    .mauticform-name {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 3px;
+    }
+
+    .mauticform-description {
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+
+    .mauticform-error {
+      margin-bottom: 10px;
+      color: red;
+    }
+
+    .mauticform-message {
+      margin-bottom: 10px;
+      color: green;
+    }
+
+    .mauticform-row {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .mauticform-label {
+      font-size: 1.1em;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .mauticform-row.mauticform-required .mauticform-label:after {
+      color: #e32;
+      content: " *";
+      display: inline;
+    }
+
+    .mauticform-helpmessage {
+      display: block;
+      font-size: 0.9em;
+      margin-bottom: 3px;
+    }
+
+    .mauticform-errormsg {
+      display: block;
+      color: red;
+      margin-top: 2px;
+    }
+
+    .mauticform-selectbox,
+    .mauticform-input,
+    .mauticform-textarea {
+      width: 100%;
+      padding: 0.5em 0.5em;
+      border: 1px solid #CCC;
+      background: #fff;
+      box-shadow: 0px 0px 0px #fff inset;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
     .mauticform-checkboxgrp-row {}
-    .mauticform-checkboxgrp-label { font-weight: normal; }
+
+    .mauticform-checkboxgrp-label {
+      font-weight: normal;
+    }
+
     .mauticform-checkboxgrp-checkbox {}
+
     .mauticform-radiogrp-row {}
-    .mauticform-radiogrp-label { font-weight: normal; }
+
+    .mauticform-radiogrp-label {
+      font-weight: normal;
+    }
+
     .mauticform-radiogrp-radio {}
-    .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5d6c7c;background-color: #ffffff;border-color: #dddddd;}
-    .mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 13px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
-    .mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }
-    .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
-</style>
-<script type="text/javascript">
+
+    .mauticform-button-wrapper .mauticform-button.btn-default,
+    .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default {
+      color: #5d6c7c;
+      background-color: #ffffff;
+      border-color: #dddddd;
+    }
+
+    .mauticform-button-wrapper .mauticform-button,
+    .mauticform-pagebreak-wrapper .mauticform-pagebreak {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 600;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 6px 12px;
+      font-size: 13px;
+      line-height: 1.3856;
+      border-radius: 3px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled],
+    .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] {
+      background-color: #ffffff;
+      border-color: #dddddd;
+      opacity: 0.75;
+      cursor: not-allowed;
+    }
+
+    .mauticform-pagebreak-wrapper .mauticform-button-wrapper {
+      display: inline;
+    }
+  </style>
+  <script type="text/javascript">
     /** This section is only needed once per page if manually copying **/
     if (typeof MauticSDKLoaded == 'undefined') {
-        var MauticSDKLoaded = true;
-        var head            = document.getElementsByTagName('head')[0];
-        var script          = document.createElement('script');
-        script.type         = 'text/javascript';
-        script.src          = 'https://app.prospecting.in/media/js/mautic-form.js';
-        script.onload       = function() {
-            MauticSDK.onLoad();
-        };
-        head.appendChild(script);
-        var MauticDomain = 'https://app.prospecting.in';
-        var MauticLang   = {
-            'submittingMessage': "Please wait..."
-        }
+      var MauticSDKLoaded = true;
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://app.prospecting.in/media/js/mautic-form.js';
+      script.onload = function () {
+        MauticSDK.onLoad();
+      };
+      head.appendChild(script);
+      var MauticDomain = 'https://app.prospecting.in';
+      var MauticLang = {
+        'submittingMessage': "Please wait..."
+      }
     }
-</script>
+  </script>
 
-
+<style>
+.modal-body {
+  padding: 60px;
+  padding-top: 20px;
+}
+</style>
 
 </head>
 
 <body>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p><br></p>
+          <h3 style="color: #2568ef;">
+            Are you engaging the right people?
+          </h3>
+
+          <p>
+              <br>
+            Most of us only engage with people that they like and feel comfortable with, this is a very common mistake
+            and
+            will prevent you from using LinkedIn effectively to grow your business.
+          </p>
+          <p>
+            We have analysed hundreds of posts and LinkedIn profiles and there are only a few “Rock stars” that really
+            know how to play the game and win.
+          </p>
+          <p>
+            What if you would get an email everyday with a handpicked selection of posts from your most active and ideal
+            customers.
+          </p>
+          <p>
+            You can now in only 30 minutes a day comment on the best content of your ideal customers and by giving them
+            thoughtful feedback and attention you can start building a valuable relationship.
+          </p>
+          <p style="display: flex;justify-content: center;">
+              <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
+              <ul style="display: flex;justify-content: center;">
+                <li class="linkedin">
+                  <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
+                    href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD - Owner</a><br>
+                  <i class="fas fa-envelope"></i> kai@prospecting.in <br>
+                    <a style="color: #2568ef;" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Schedule a
+                      call</a>
+                </li>
+              </ul>            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Preloader Start -->
   <div class="se-pre-con"></div>
@@ -191,7 +350,8 @@
 
   <!-- Start Banner
     ============================================= -->
-  <div class="banner-area content-double text-center background-move bg-gray" style="background-image: url(assets/img/bg-2.png);">
+  <div class="banner-area content-double text-center background-move bg-gray"
+    style="background-image: url(assets/img/bg-2.png);">
     <div class="container">
       <div class="row">
         <div class="double-items">
@@ -206,7 +366,8 @@
                   <p>
                     We research, create and execute your campaigns.
                   </p>
-                  <a class="btn btn-theme border btn-md" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                  <a class="btn btn-theme border btn-md" target="_blank"
+                    href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                 </div>
                 <!-- End Single Item -->
                 <!-- Single Item -->
@@ -217,7 +378,8 @@
                   <p>
                     We convert any lead source into a list of your ideal customers.
                   </p>
-                  <a class="btn btn-theme border btn-md" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                  <a class="btn btn-theme border btn-md" target="_blank"
+                    href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                 </div>
                 <!-- End Single Item -->
                 <!-- Single Item -->
@@ -228,7 +390,8 @@
                   <p>
                     Full control and send unlimited emails.
                   </p>
-                  <a class="btn btn-theme border btn-md" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                  <a class="btn btn-theme border btn-md" target="_blank"
+                    href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                 </div>
                 <!-- End Single Item -->
               </div>
@@ -237,7 +400,8 @@
           <div class="col-md-6 right-info">
             <div class="thumb">
               <img src="assets/img/app/app-2.png" alt="Thumb">
-              <a style="display:none;" class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=m59-OnAGsDw">
+              <a style="display:none;" class="popup-youtube video-play-button"
+                href="https://www.youtube.com/watch?v=m59-OnAGsDw">
                 <i class="fa fa-play"></i>
               </a>
             </div>
@@ -255,20 +419,33 @@
       <div class="row">
         <!-- Thumb -->
         <div class="col-md-5 thumb">
-          <img src="assets/img/illustrations/1.png" alt="Thumb">
+            <img style="width: 70%;" src="assets/img/team/kai.png" alt="Thumb">
+            <br><br>
+            <ul>
+              <li class="linkedin">
+                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
+                  href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD - Owner</a><br>
+                <i class="fas fa-envelope"></i> kai@prospecting.in
+              </li>
+              <li>
+                  <a style="color: #2568ef;" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Schedule a
+                    call</a>
+              </li>
+            </ul>
         </div>
         <!-- End Thumb -->
         <div class="col-md-7 feature-box">
           <div class="features-items text-center">
             <div class="row mb-3">
-                <div class="col-12">
-                  <div class="site-heading text-center">
-                    <h2>Support</h2>
-                    <p>
-                     Good communication is a priority to us. That’s why we made sure we are reachable in the most convenient ways. Choose between sending us a quick message, an email or creating a ticket.
-                    </p>
-                  </div>
+              <div class="col-12">
+                <div class="site-heading text-center">
+                  <h2>Support</h2>
+                  <p>
+                    Good communication is a priority to us. That’s why we made sure we are reachable in the most
+                    convenient ways. Choose between sending us a quick message, an email or creating a ticket.
+                  </p>
                 </div>
+              </div>
             </div>
             <div class="row">
               <!-- Single Item -->
@@ -347,9 +524,11 @@
         <div class="col-md-8 col-md-offset-2 info">
           <h2>We help B2B sales teams with <br>Fully Managed Outreach</h2>
           <p>
-            Account-based outreach is dedicated to decision-makers all within the same organization. Therefore, it ensures your marketing campaigns are designed to resonate with these specific people.
+            Account-based outreach is dedicated to decision-makers all within the same organization. Therefore, it
+            ensures your marketing campaigns are designed to resonate with these specific people.
           </p>
-          <p>Nearly all B2B solution providers that measure account-based marketing (ABM) ROI find that ABM delivers higher ROI than other marketing initiatives.</p>
+          <p>Nearly all B2B solution providers that measure account-based marketing (ABM) ROI find that ABM delivers
+            higher ROI than other marketing initiatives.</p>
           <div class="fun-facts">
             <h3>Some of the companies we created connections with</h3>
             <div class="row">
@@ -392,7 +571,8 @@
           <div class="site-heading text-center">
             <h2>A Solid System</h2>
             <p>
-              Lead generation is simple in theory, but it’s definitely not easy to execute effectively. In fact, only 1 in 10 marketers said that their lead generation efforts are highly efficient and effective.
+              Lead generation is simple in theory, but it’s definitely not easy to execute effectively. In fact, only 1
+              in 10 marketers said that their lead generation efforts are highly efficient and effective.
             </p>
             <p>
               To ensure the efficiency and consistency of results, we have highly optimized our systems and processes.
@@ -412,7 +592,8 @@
               <div class="info">
                 <h4>Goal Setting</h4>
                 <p>
-                  We define your goals, set targets and plan your campaign. We can advise on how to make your campaign GDPR (General Data Protection Regulation) compliant.
+                  We define your goals, set targets and plan your campaign. We can advise on how to make your campaign
+                  GDPR (General Data Protection Regulation) compliant.
                 </p>
                 <!-- <div class="bottom">
                                     <a href="#">View Details <i class="fas fa-angle-right"></i></a>
@@ -431,7 +612,8 @@
               <div class="info">
                 <h4>Full Target Group Assessment</h4>
                 <p>
-                  We research your industry and your prospects’ location, company size, job titles in order to make sure we understand your market and audience correctly.
+                  We research your industry and your prospects’ location, company size, job titles in order to make sure
+                  we understand your market and audience correctly.
                 </p>
               </div>
             </div>
@@ -447,7 +629,8 @@
               <div class="info">
                 <h4>Building a list of prospects</h4>
                 <p>
-                  Every prospect is individually checked and added to a database to ensure the highest quality. Their contact information is carefully verified to avoid mistakes.
+                  Every prospect is individually checked and added to a database to ensure the highest quality. Their
+                  contact information is carefully verified to avoid mistakes.
                 </p>
               </div>
             </div>
@@ -463,7 +646,8 @@
               <div class="info">
                 <h4>Technical Setup</h4>
                 <p>
-                  The setup of your domain, email and DNS as well as the setup of your delivery, open, click and response tracking to assure everything runs smoothly.
+                  The setup of your domain, email and DNS as well as the setup of your delivery, open, click and
+                  response tracking to assure everything runs smoothly.
                 </p>
               </div>
             </div>
@@ -479,7 +663,8 @@
               <div class="info">
                 <h4>Fully managed outreach</h4>
                 <p>
-                  We combine multiple lead sources, e.g. LinkedIn, BuiltWith, Inc. 5000 or your industry-specific source, with email to create your highly optimized campaign.
+                  We combine multiple lead sources, e.g. LinkedIn, BuiltWith, Inc. 5000 or your industry-specific
+                  source, with email to create your highly optimized campaign.
                 </p>
               </div>
             </div>
@@ -495,7 +680,8 @@
               <div class="info">
                 <h4>Review, analyze</h4>
                 <p>
-                  We closely review and analyze the results of your campaign and report them back to you. We keep everything structured together and you can access it at any time.
+                  We closely review and analyze the results of your campaign and report them back to you. We keep
+                  everything structured together and you can access it at any time.
                 </p>
               </div>
             </div>
@@ -521,9 +707,11 @@
           <div class="site-heading text-center">
             <h2>Complete ownership</h2>
             <p>
-              Is email marketing a priority for your business in 2019? Are you looking for the best email marketing software?
+              Is email marketing a priority for your business in 2019? Are you looking for the best email marketing
+              software?
               <br>
-              Choosing the right email marketing service can have a significant impact on the success of your marketing campaign.
+              Choosing the right email marketing service can have a significant impact on the success of your marketing
+              campaign.
               <br>
               That's why we choose to use open source software so you can have total control over your campaign.
             </p>
@@ -663,7 +851,8 @@
                 * For Email packages it is possible to upgrade or downgrade.
               </div>
               <div>
-                * The one-time onboarding fee includes <b>Technical setup domain, Technical setup email, Technical setup campaign server and communication with third party service providers like dns and email providers.</b>
+                * The one-time onboarding fee includes <b>Technical setup domain, Technical setup email, Technical setup
+                  campaign server and communication with third party service providers like dns and email providers.</b>
               </div>
             </div>
           </div>
@@ -844,7 +1033,8 @@
               </div>
               <div class="info">
                 <p>
-                  I'm really happy with how fast you guys got this LinkedIn campaign setup, and how quick the feedback is<br>
+                  I'm really happy with how fast you guys got this LinkedIn campaign setup, and how quick the feedback
+                  is<br>
                   One week in, and we've already seen leads and meetings booked in<br>
                   It's a great service.</p>
                 <h4>Charlie Price</h4>
@@ -859,141 +1049,142 @@
   </div>
   <!-- End Testimonials Area -->
 
-	 <!-- Start Team Area
+  <!-- Start Team Area
     ============================================= -->
-    <div id="team" class="team-area radius-less default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>A Reliable Team</h2>
-                        <p>
-We work with a in-house team of assistants so your accounts will always be handled by a trusted and reliable assistant, and won't be out-sourced to a remote and unknown person.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="team-items text-center">
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/kai.png" alt="Thumb">
-                                <ul>
-                                    <li class="linkedin">
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>Kai Tevapitak</h4>
-                                <span>Owner</span>
-                                <h5><i class="fas fa-envelope"></i> kai@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/robert.png" alt="Thumb">
-                                <ul>
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/robertjessecooke/"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>Robert Cooke</h4>
-                                <span>Technical support</span>
-                                <h5><i class="fas fa-envelope"></i> robert@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/vassi.png" alt="Thumb">
-                                <ul>
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/vassyrng/"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>Vassi Rangelova</h4>
-                                <span>Head of Campaigns</span>
-                                <h5><i class="fas fa-envelope"></i> vassi@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/cartoon.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="https://www.facebook.com/animeslinh"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>Cartoon Suparn</h4>
-                                <span>Head of People</span>
-                                <h5><i class="fas fa-envelope"></i> cartoon@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/mink.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="https://www.facebook.com/ming.tingtong"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>Mink Pimmasri</h4>
-                                <span>Internet Researcher</span>
-                                <h5><i class="fas fa-envelope"></i> mink@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/june.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="https://www.facebook.com/june.mu.56"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>June Suttanom</h4>
-                                <span>Internet Researcher</span>
-                                <h5><i class="fas fa-envelope"></i> june@prospecting.in</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
+  <div id="team" class="team-area radius-less default-padding bottom-less">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
+          <div class="site-heading text-center">
+            <h2>A Reliable Team</h2>
+            <p>
+              We work with a in-house team of assistants so your accounts will always be handled by a trusted and
+              reliable assistant, and won't be out-sourced to a remote and unknown person.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="team-items text-center">
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/kai.png" alt="Thumb">
+                <ul>
+                  <li class="linkedin">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>Kai Tevapitak, PhD</h4>
+                <span>Owner</span>
+                <h5><i class="fas fa-envelope"></i> kai@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/robert.png" alt="Thumb">
+                <ul>
+                  <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/robertjessecooke/"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>Robert Cooke</h4>
+                <span>Technical support</span>
+                <h5><i class="fas fa-envelope"></i> robert@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/vassi.png" alt="Thumb">
+                <ul>
+                  <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/vassyrng/"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>Vassi Rangelova</h4>
+                <span>Head of Campaigns</span>
+                <h5><i class="fas fa-envelope"></i> vassi@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/cartoon.png" alt="Thumb">
+                <ul>
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/animeslinh"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>Cartoon Suparn</h4>
+                <span>Head of People</span>
+                <h5><i class="fas fa-envelope"></i> cartoon@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/mink.png" alt="Thumb">
+                <ul>
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/ming.tingtong"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>Mink Pimmasri</h4>
+                <span>Internet Researcher</span>
+                <h5><i class="fas fa-envelope"></i> mink@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+          <!-- Single Item -->
+          <div class="col-md-4 single-item">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/img/team/june.png" alt="Thumb">
+                <ul>
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/june.mu.56"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info">
+                <h4>June Suttanom</h4>
+                <span>Internet Researcher</span>
+                <h5><i class="fas fa-envelope"></i> june@prospecting.in</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Item -->
+        </div>
+      </div>
     </div>
-    <!-- End Team Area -->
+  </div>
+  <!-- End Team Area -->
 
 
 
@@ -1009,47 +1200,65 @@ We work with a in-house team of assistants so your accounts will always be handl
 
 
 
-<div id="mauticform_wrapper_prospectingincontactform" class="mauticform_wrapper">
-    <form autocomplete="false" role="form" method="post" action="https://app.prospecting.in/form/submit?formId=1" id="mauticform_prospectingincontactform" data-mautic-form="prospectingincontactform" enctype="multipart/form-data">
-        <div class="mauticform-error" id="mauticform_prospectingincontactform_error"></div>
-        <div class="mauticform-message" id="mauticform_prospectingincontactform_message"></div>
-        <div class="mauticform-innerform">
+            <div id="mauticform_wrapper_prospectingincontactform" class="mauticform_wrapper">
+              <form autocomplete="false" role="form" method="post"
+                action="https://app.prospecting.in/form/submit?formId=1" id="mauticform_prospectingincontactform"
+                data-mautic-form="prospectingincontactform" enctype="multipart/form-data">
+                <div class="mauticform-error" id="mauticform_prospectingincontactform_error"></div>
+                <div class="mauticform-message" id="mauticform_prospectingincontactform_message"></div>
+                <div class="mauticform-innerform">
 
 
-          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+                  <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
 
-            <div id="mauticform_prospectingincontactform_first_name" data-validate="first_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
-                <input id="mauticform_input_prospectingincontactform_first_name" name="mauticform[first_name]" value="" placeholder="First Name" class="mauticform-input" type="text">
-                <span class="mauticform-errormsg" style="display: none;">Please fill in your first name</span>
+                    <div id="mauticform_prospectingincontactform_first_name" data-validate="first_name"
+                      data-validation-type="text"
+                      class="mauticform-row mauticform-text mauticform-field-1 mauticform-required">
+                      <input id="mauticform_input_prospectingincontactform_first_name" name="mauticform[first_name]"
+                        value="" placeholder="First Name" class="mauticform-input" type="text">
+                      <span class="mauticform-errormsg" style="display: none;">Please fill in your first name</span>
+                    </div>
+
+                    <div id="mauticform_prospectingincontactform_last_name" data-validate="last_name"
+                      data-validation-type="text"
+                      class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
+                      <input id="mauticform_input_prospectingincontactform_last_name" name="mauticform[last_name]"
+                        value="" placeholder="Last Name" class="mauticform-input" type="text">
+                      <span class="mauticform-errormsg" style="display: none;">Please fill in your last name</span>
+                    </div>
+
+                    <div id="mauticform_prospectingincontactform_email" data-validate="email"
+                      data-validation-type="email"
+                      class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
+                      <input id="mauticform_input_prospectingincontactform_email" name="mauticform[email]" value=""
+                        placeholder="Email address" class="mauticform-input" type="email">
+                      <span class="mauticform-errormsg" style="display: none;">Please fill in your email address</span>
+                    </div>
+
+                    <div id="mauticform_prospectingincontactform_f_message" data-validate="f_message"
+                      data-validation-type="textarea"
+                      class="mauticform-row mauticform-text mauticform-field-4 mauticform-required">
+                      <textarea id="mauticform_input_prospectingincontactform_f_message" name="mauticform[f_message]"
+                        class="mauticform-textarea">Message</textarea>
+                      <span class="mauticform-errormsg" style="display: none;">Please fill in a message</span>
+                    </div>
+
+                    <div id="mauticform_prospectingincontactform_submit"
+                      class="mauticform-row mauticform-button-wrapper mauticform-field-5">
+                      <button type="submit" name="mauticform[submit]"
+                        id="mauticform_input_prospectingincontactform_submit" value=""
+                        class="mauticform-button btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </div>
+
+                <input type="hidden" name="mauticform[formId]" id="mauticform_prospectingincontactform_id" value="1">
+                <input type="hidden" name="mauticform[return]" id="mauticform_prospectingincontactform_return" value="">
+                <input type="hidden" name="mauticform[formName]" id="mauticform_prospectingincontactform_name"
+                  value="prospectingincontactform">
+
+              </form>
             </div>
-
-            <div id="mauticform_prospectingincontactform_last_name" data-validate="last_name" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-2 mauticform-required">
-                <input id="mauticform_input_prospectingincontactform_last_name" name="mauticform[last_name]" value="" placeholder="Last Name" class="mauticform-input" type="text">
-                <span class="mauticform-errormsg" style="display: none;">Please fill in your last name</span>
-            </div>
-
-            <div id="mauticform_prospectingincontactform_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
-                <input id="mauticform_input_prospectingincontactform_email" name="mauticform[email]" value="" placeholder="Email address" class="mauticform-input" type="email">
-                <span class="mauticform-errormsg" style="display: none;">Please fill in your email address</span>
-            </div>
-
-            <div id="mauticform_prospectingincontactform_f_message" data-validate="f_message" data-validation-type="textarea" class="mauticform-row mauticform-text mauticform-field-4 mauticform-required">
-                <textarea id="mauticform_input_prospectingincontactform_f_message" name="mauticform[f_message]" class="mauticform-textarea">Message</textarea>
-                <span class="mauticform-errormsg" style="display: none;">Please fill in a message</span>
-            </div>
-
-            <div id="mauticform_prospectingincontactform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-5">
-                <button type="submit" name="mauticform[submit]" id="mauticform_input_prospectingincontactform_submit" value="" class="mauticform-button btn btn-default">Submit</button>
-            </div>
-            </div>
-        </div>
-
-        <input type="hidden" name="mauticform[formId]" id="mauticform_prospectingincontactform_id" value="1">
-        <input type="hidden" name="mauticform[return]" id="mauticform_prospectingincontactform_return" value="">
-        <input type="hidden" name="mauticform[formName]" id="mauticform_prospectingincontactform_name" value="prospectingincontactform">
-
-        </form>
-</div>
 
 
 
@@ -1080,12 +1289,14 @@ We work with a in-house team of assistants so your accounts will always be handl
               </h4>
               <p>
                 <i>
-                We work with a in-house team of assistants so your LinkedIn account will always be handled by a trusted and reliable assistant, and won't be out-sourced to a remote and unkown person.</i>
+                  We work with a in-house team of assistants so your LinkedIn account will always be handled by a
+                  trusted and reliable assistant, and won't be out-sourced to a remote and unkown person.</i>
               </p>
               <div style="display:none;" class="newsletter">
                 <form action="#">
                   <div class="input-group stylish-input-group">
-                    <input type="email" name="email" class="form-control" placeholder="For updates enter your e-mail here">
+                    <input type="email" name="email" class="form-control"
+                      placeholder="For updates enter your e-mail here">
                     <button type="submit">
                       <i class="fa fa-paper-plane"></i>
                     </button>
@@ -1122,9 +1333,9 @@ We work with a in-house team of assistants so your accounts will always be handl
           <div class="col-md-4 col-sm-6 equal-height item">
             <div class="f-item twitter-widget">
               <h4>Contact Info</h4>
-                Bangkok 10140 Thailand<br/>
-                Suksawat 26<br/>
-                Vat number : 0105559181543
+              Bangkok 10140 Thailand<br />
+              Suksawat 26<br />
+              Vat number : 0105559181543
               <div class="address">
                 <ul>
                   <li>
@@ -1198,12 +1409,20 @@ We work with a in-house team of assistants so your accounts will always be handl
   <script src="assets/js/bootsnav.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
-        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
-        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://app.prospecting.in/mtc.js','mt');
+    (function (w, d, t, u, n, a, m) {
+      w['MauticTrackingObject'] = n;
+      w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) }, a = d.createElement(t),
+        m = d.getElementsByTagName(t)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://app.prospecting.in/mtc.js', 'mt');
 
     mt('send', 'pageview');
+  </script>
+  <script>
+    $(window).load(function () {
+      setTimeout(function () {
+        $('.modal').modal('show');
+      }, 0);
+    });
   </script>
 </body>
 
