@@ -69,6 +69,72 @@
 
 <body>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <br></p>
+          <h3 style="color: #2568ef;">
+            Are you engaging with the right people?
+          </h3>
+
+          <p>
+            <br>
+            Most of us only engage with people that they like and feel comfortable with, this is a very common but,
+            will prevent you from using LinkedIn effectively to grow your business.
+          </p>
+          <p>
+            We have analysed hundreds of posts and LinkedIn profiles and there are only a few “Rock stars” that really
+            know how to play the game and win.
+          </p>
+          <p>
+            What if you would get an list everyday with a handpicked selection of posts from your most active and ideal
+            customers.
+          </p>
+          <p>
+            You can now comment on the best content from your ideal customers and by giving them thoughtful feedback and
+            attention you can start building a valuable relationship.
+          </p>
+          <p>
+            <form>
+              <input type="hidden" name="choice2" value="popup-prospecting-index-subscribe">
+              <input type="text" name="name2" class="form-control" placeholder="Your name">
+              <br>
+              <input type="email" name="email2" class="form-control" placeholder="Your email">
+              <br>
+              <button id="submit_btn2" class="btn btn-theme" type="submit">Get a free trail with 20 ideal
+                clients!</button>
+            </form>
+            <span style="font-size: 10px;">* no creditcard and no commitments</span>
+          </p>
+
+          <p style="display: flex;justify-content: center;">
+            <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
+            <ul style="display: flex;justify-content: center;">
+              <li class="linkedin">
+                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
+                  href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD - Owner</a><br>
+                <i class="fas fa-envelope"></i> kai@prospecting.in <br>
+                <a style="color: #2568ef;" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Schedule
+                  a
+                  call</a>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
@@ -148,12 +214,12 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="content">
-                                <h1>Get a free trail with <br> 20 ideal clients!</h1>
+                                <h1>Get a trail with <br> 20 ideal clients!</h1>
                                 <p>
                                     The most powerful way of letting your ideal clients learn about you is to directly
                                     engage with them.
                                 </p>
-                                <a class="btn circle btn-light border btn-md"
+                                <a class="btn circle btn-light border btn-md get-started"
                                     href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
 
                             </div>
@@ -162,23 +228,24 @@
                                 <div class="form-info">
                                     <h4>Sign up today</h4>
                                     <form action="#">
+                                        <input type="hidden" name="choice" value="popup-prospecting-index-subscribe">
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Name*" type="text">
+                                                    <input class="form-control" placeholder="Your name*" name="name" type="text">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Email*" type="email">
+                                                    <input class="form-control" placeholder="Your email*" type="email" name="email">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
-                                                <button type="submit">
+                                                <button id="submit_btn" type="submit">
                                                     Get 20 ideal clients!
                                                     <!--Register for free -->
                                                 </button>
@@ -199,48 +266,6 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Start About
-    ============================================= -->
-    <div style="display: none;" id="about" class="about-area companies-area text-center bg-gray default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 info">
-                    <br><br><br><br>
-                    <h2>The Best Way to Manage LinkedIn <br>Engagement</h2>
-                    <p>
-                        Your Ideal clients make decisions based on their emotions. They want to know about your story
-                        and not just about the product or service. Why they should trust you, why they should buy from
-                        you.
-                    </p>
-                    <p>
-                        What are you doing to tell others about your story, how do you make them see and recognize you.
-                        When you connect with ideal clients they should have an interest in you.
-                        The most powerful way of letting your ideal clients learn about you is to directly engage with
-                        them.
-                        <br><br>
-                    </p>
-
-                    <h3>
-                        LinkedIn is perfect for this.
-                    </h3>
-                    <p>
-                        You can introduce yourself and show your ideas and knowledge with just a few comments that will
-                        inspire and motivate them to do business with you.
-                    </p>
-                    <p>
-                        Manage all of your conversations in one convenient dashboard, and get a bird’s-eye view of
-                        what’s happening
-                        in your LinkedIn account.
-                    </p>
-                    <p>We have created a tool that allows you to be a part of the conversation and never miss when your
-                        ideal client shares valuable opportunities
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End About -->
 
     <!-- process -->
     <div id="process" class="work-step-area default-padding">
@@ -249,7 +274,7 @@
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
                         <br><br><br>
-                        <h2>How it works</h2>
+                        <h2>A strategy that actually works</h2>
                         <p>
                             Your Ideal clients make decisions based on their emotions. They want to know
                             about your story
@@ -280,7 +305,7 @@
                                             posts so you can engage and nurture them.
                                         </p>
                                         <p>
-                                            With advanced filters you can select your ideal clients.
+                                            With advanced filters you can select your ideal clients and discover new clients.
 
                                         </p>
                                         <ul>
@@ -291,7 +316,7 @@
                                             <li>Seniority Level</li>
                                             <li>Function</li>
                                         </ul>
-                                        <a class="btn btn-theme border btn-md" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +356,7 @@
                                             <li>Statistics from your ideal clients</li>
                                             
                                         </ul>
-                                        <a class="btn btn-theme border btn-md" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +390,7 @@
                                             <li>Export and share</li>
                                             <li>Nurture over a long periods</li>
                                         </ul>
-                                        <a class="btn btn-theme border btn-md" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started" href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +430,7 @@
                             <li>Nurture your ideal client over a long period</li>
                             <li>Be more organized more effective and save huge amounts of time</li>
                         </ul>
-                        <a class="btn circle btn-light border btn-md"
+                        <a class="btn circle btn-light border btn-md get-started"
                             href="https://calendly.com/prospecting-in/letsmeet">Get Started</a>
                     </div>
                     <div class="col-md-6 video">
@@ -644,7 +669,7 @@
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading no-text-center">
                         <div class="text-center">
-                            <h2>Get a free trail with 20 ideal clients!</h2>
+                            <h2>Get a trail with 20 ideal clients!</h2>
                             <h3 style="color: #2568ef;">
                                 Are you engaging with your ideal clients?
                             </h3>
@@ -682,7 +707,7 @@
                                 <br>
                                 <input type="email" name="email2" class="form-control" placeholder="Your email">
                                 <br>
-                                <button id="submit_btn2" class="btn btn-theme" type="submit">Get a free trail with 20
+                                <button id="submit_btn2" class="btn btn-theme" type="submit">Get a trail with 20
                                     ideal
                                     clients!</button>
                             </form>
@@ -931,10 +956,9 @@
       </script>
       -->
     <script>
-        $(window).load(function () {
-            setTimeout(function () {
-                $('.modal').modal('show');
-            }, 3000);
+        $(".get-started").click(function (event) {
+            event.preventDefault();
+            $('.modal').modal('show');
         });
     </script>
 </body>
