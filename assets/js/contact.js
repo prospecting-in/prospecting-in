@@ -148,4 +148,61 @@ $(document)
         return false;
       });
 
+
+      $("#submit_btn3")
+      .click(function () {
+        //get input field values
+        var user_name = $('input[name=name3]')
+          .val();
+        var user_email = $('input[name=email3]')
+          .val();
+        var user_message = $('textarea[name=message3]')
+          .val();
+        var choice = $('input[name=choice3]')
+          .val();
+        var ref = getCookie('ref');
+        if(ref) {
+          choice = choice + " : ref-cookie = " + ref;
+        }
+
+        var proceed = true;
+        if(user_name == "") {
+          $('input[name=name3]')
+            .css('border-color', '#e41919');
+          proceed = false;
+        }
+        if(user_email == "") {
+          $('input[name=email3]')
+            .css('border-color', '#e41919');
+          proceed = false;
+        }
+        if(user_message == "") {
+          $('textarea[name=message3]')
+            .css('border-color', '#e41919');
+          //    proceed = false;
+        }
+        //everything looks good! proceed...
+        if(proceed) {
+          //data to be sent to server
+          post_data = {
+            'name': user_name,
+            'email': user_email,
+            'message': user_message,
+            'choice': choice
+          };
+          var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
+          var jqxhr = $.post(url, post_data, function (post_data) {
+              setTimeout(function () {
+                window.location.replace('thank-you.html');
+              }, 500);
+            })
+            .fail(function (data) {
+              setTimeout(function () {
+                window.location.replace('error.html');
+              }, 500);
+            });
+        }
+        return false;
+      });
+
   });
