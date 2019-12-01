@@ -31,10 +31,9 @@
             offset: 200
         });
         $('a.smooth-menu').on('click', function(event) {
-            var $anchor = $(this);
-            var headerH = '75';
+            var url = $(this).context.href;
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - headerH + "px"
+                scrollTop: $(url.substring(url.indexOf('#'))).offset().top
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
