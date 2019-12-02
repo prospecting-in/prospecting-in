@@ -4050,7 +4050,10 @@ footer.demo .copyright {
 
   #pricing > div > div:nth-child(2) > div > div > div.col-12.text-center.pricing-item {
     display: none;
-}
+  }
+  .pricing-box {
+    margin: 0px !important;
+  }
 
 
 }

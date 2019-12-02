@@ -83,10 +83,16 @@
         .pricing-area .pricing-item .footer {
             text-align: left;
         }
+
         .pricing-popup {
             text-transform: uppercase;
         }
-        
+
+        .pricing-box {
+            border: 1px solid #ddd;
+            padding: 35px;
+            margin: 35px;
+        }
     </style>
 </head>
 
@@ -116,53 +122,59 @@
 
 
 
-                        
-
-                        
 
 
 
-                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;" class="hide pricing-header text-center" id="payment-prepaid">
-                            <div class="pricing-popup">
-                                    <h4>Pre paid</h4>
-                                    <h2><sup>$</sup>99</h2>
-                                </div>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="C3UA9NC995FX2">
-                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                                </form>
-                                
+
+
+
+                    <div class="hide pricing-header pricing-box text-center" id="payment-prepaid">
+                        <div class="pricing-popup">
+                            <h4>Pre paid</h4>
+                            <h2><sup>$</sup>99</h2>
+                        </div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="C3UA9NC995FX2">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
+                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
+                                height="1">
+                        </form>
+
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;"  class="hide pricing-header text-center" id="payment-professional">
-                            <div class="pricing-popup">
-                                    <h4>Professional</h4>
-                                    <h2><sup>$</sup>199 /mo</h2>
-                                </div>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="5CCCRSXYQF9C8">
-                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                                </form>                                
+                    <div class="hide pricing-header pricing-box text-center" id="payment-professional">
+                        <div class="pricing-popup">
+                            <h4>Professional</h4>
+                            <h2><sup>$</sup>199 /mo</h2>
+                        </div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="5CCCRSXYQF9C8">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
+                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
+                                height="1">
+                        </form>
                     </div>
 
-                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;"  class="hide pricing-header text-center" id="payment-premium">
-                            <div class="pricing-popup">
-                                    <h4>Premium</h4>
-                                    <h2><sup>$</sup>499 /mo</h2>
-                                </div>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_s-xclick">
-                                <input type="hidden" name="hosted_button_id" value="UM5TAGCK5LSR4">
-                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                                </form>
-                                
+                    <div class="hide pricing-header pricing-box text-center" id="payment-premium">
+                        <div class="pricing-popup">
+                            <h4>Premium</h4>
+                            <h2><sup>$</sup>499 /mo</h2>
+                        </div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="UM5TAGCK5LSR4">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
+                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
+                                height="1">
+                        </form>
+
                     </div>
-                        
+
                     <!--payment button-->
 
                     <p style="display: flex;justify-content: center;">
@@ -173,7 +185,7 @@
                                     href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
                                     Owner</a><br>
                                 <i class="fas fa-envelope"></i> kai@prospecting.in <br>
-                             </li>
+                            </li>
                         </ul>
                     </p>
                 </div>
@@ -570,7 +582,7 @@
                                         <h4>Premium</h4>
                                         <h2><sup>$</sup>499 /mo</h2>
                                         <a data-price="premium" class="btn btn-theme border btn-md start-campaign"
-                                            href="index.html#pricing">Start Campaign</a> 
+                                            href="index.html#pricing">Start Campaign</a>
                                     </li>
                                     <li><i class="fas fa-check"></i> 10 pieces of content </li>
                                     <li><i class="fas fa-check"></i> Analyze 50 profiles per day</li>
@@ -1049,17 +1061,17 @@
             event.preventDefault();
             var pricetype = event.target.dataset.price;
             $('.modal').modal('show');
-            if(pricetype == 'prepaid'){
+            if (pricetype == 'prepaid') {
                 $("#payment-premium").addClass("hide");
                 $("#payment-professional").addClass("hide");
                 $("#payment-prepaid").removeClass("hide");
             }
-            if(pricetype == 'professional'){ 
+            if (pricetype == 'professional') {
                 $("#payment-prepaid").addClass("hide");
                 $("#payment-premium").addClass("hide");
                 $("#payment-professional").removeClass("hide");
             }
-            if(pricetype == 'premium'){
+            if (pricetype == 'premium') {
                 $("#payment-prepaid").addClass("hide");
                 $("#payment-professional").addClass("hide");
                 $("#payment-premium").removeClass("hide");
