@@ -3,14 +3,14 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131465208-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131465208-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-131465208-4');
-</script>
+        gtag('config', 'UA-131465208-4');
+    </script>
 
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
@@ -74,86 +74,113 @@
             height: 250px;
             width: 250px;
         }
+
         .modal-body {
             padding: 60px;
+            padding-bottom: 0px;
         }
+
         .pricing-area .pricing-item .footer {
             text-align: left;
         }
+        .pricing-popup {
+            text-transform: uppercase;
+        }
+        
     </style>
 </head>
 
 <body>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="site-heading modal-body">
-          <p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <br></p>
-                <div class="text-center">
-                    <h2>A LinkedIn strategy that works!</h2>
-                    <h3 style="color: #2568ef;">
-                        100% money back guarantee
-                    </h3>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="site-heading modal-body">
+                    <p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <br></p>
+                    <div class="text-center">
+                        <h2>A LinkedIn strategy that works!</h2>
+                        <h3 style="color: #2568ef;">
+                            100% money back guarantee
+                        </h3>
+                    </div>
+
+                    <!--payment button-->
+
+
+
+
+                        
+
+                        
+
+
+
+                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;" class="hide pricing-header text-center" id="payment-prepaid">
+                            <div class="pricing-popup">
+                                    <h4>Pre paid</h4>
+                                    <h2><sup>$</sup>99</h2>
+                                </div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="C3UA9NC995FX2">
+                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                                
+                    </div>
+
+                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;"  class="hide pricing-header text-center" id="payment-professional">
+                            <div class="pricing-popup">
+                                    <h4>Professional</h4>
+                                    <h2><sup>$</sup>199 /mo</h2>
+                                </div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="5CCCRSXYQF9C8">
+                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>                                
+                    </div>
+
+                    <div style="border: 1px solid #ddd; padding: 35px; margin: 35px;"  class="hide pricing-header text-center" id="payment-premium">
+                            <div class="pricing-popup">
+                                    <h4>Premium</h4>
+                                    <h2><sup>$</sup>499 /mo</h2>
+                                </div>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="UM5TAGCK5LSR4">
+                                <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                                
+                    </div>
+                        
+                    <!--payment button-->
+
+                    <p style="display: flex;justify-content: center;">
+                        <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
+                        <ul style="display: flex;justify-content: center;">
+                            <li class="linkedin">
+                                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
+                                    href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
+                                    Owner</a><br>
+                                <i class="fas fa-envelope"></i> kai@prospecting.in <br>
+                             </li>
+                        </ul>
+                    </p>
                 </div>
-
-
-          <p>
-            <br>
-            Most of us only engage with people that they like and feel comfortable with, this is a very common but,
-            will prevent you from using LinkedIn effectively to grow your business.
-            <br><br>
-          </p>
-          <p>
-            We have analysed hundreds of posts and LinkedIn profiles and there are only a few “Rock stars” that really
-            know how to play the game and win.
-            <br><br>
-        </p>
-          <p>
-            What if you would get an list everyday with a handpicked selection of posts from your most active and ideal
-            customers.<br><br>
-          </p>
-          <p>
-            You can now comment on the best content from your ideal customers and by giving them thoughtful feedback and
-            attention you can start building a valuable relationship.
-            <br><br><br>
-          </p>
-          <p>
-            <form>
-              <input type="hidden" name="choice2" value="popup-prospecting-index-subscribe">
-              <input type="text" name="name2" class="form-control" placeholder="Your name">
-              <br>
-              <input type="email" name="email2" class="form-control" placeholder="Your email">
-              <br>
-              <button id="submit_btn2" class="btn btn-theme" type="submit">Start my campaign</button>
-            </form>
-          </p>
-
-          <p style="display: flex;justify-content: center;">
-            <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
-            <ul style="display: flex;justify-content: center;">
-              <li class="linkedin">
-                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
-                  href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD - Owner</a><br>
-                <i class="fas fa-envelope"></i> kai@prospecting.in <br>
-                <a style="color: #2568ef;" target="_blank" href="https://calendly.com/prospecting-in/letsmeet">Schedule
-                  a
-                  call</a>
-              </li>
-            </ul>
-          </p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- End Modal -->
+    <!-- End Modal -->
 
 
     <!-- Preloader Start -->
@@ -241,8 +268,10 @@
                                 <h1>A LinkedIn strategy that works!</h1>
                                 <h2 style="font-weight: bold;">100% money back guarantee</h2>
                                 <p>
-                                    The most powerful way of letting your ideal clients learn about you is to directly engage with them.
-                                    We make sure you only spend time on people that are actually active and are interested in engagement.</p>
+                                    The most powerful way of letting your ideal clients learn about you is to directly
+                                    engage with them.
+                                    We make sure you only spend time on people that are actually active and are
+                                    interested in engagement.</p>
                                 <a class="btn circle btn-light border btn-md get-started smooth-menu"
                                     href="index.html#pricing">Get Started</a>
 
@@ -250,20 +279,23 @@
                             <!-- Start Form -->
                             <div class="form col-md-6 col-md-offset-3">
                                 <div class="form-info">
-                                    <h4>Get our FREE eBook <br><br><span style="font-size: 90%; color: black;">A LinkedIn Strategy That Works!</span></h4>
+                                    <h4>Get our FREE eBook <br><br><span style="font-size: 90%; color: black;">A
+                                            LinkedIn Strategy That Works!</span></h4>
                                     <form action="#">
                                         <input type="hidden" name="choice" value="prospecting-ebook-index-subscribe">
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Your name*" name="name" type="text">
+                                                    <input class="form-control" placeholder="Your name*" name="name"
+                                                        type="text">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Your email*" type="email" name="email">
+                                                    <input class="form-control" placeholder="Your email*" type="email"
+                                                        name="email">
                                                 </div>
                                             </div>
                                         </div>
@@ -329,10 +361,12 @@
                                             posts so you can engage and nurture them.
                                         </p>
                                         <p>
-                                            With advanced filters you can select your ideal clients and discover new clients.
+                                            With advanced filters you can select your ideal clients and discover new
+                                            clients.
                                         </p>
-                                        <p> 
-                                            In case your ideal clients are not active on LinkedIn we have a 100% money back guarantee.
+                                        <p>
+                                            In case your ideal clients are not active on LinkedIn we have a 100% money
+                                            back guarantee.
                                         </p>
                                         <ul>
                                             <li>Keywords</li>
@@ -342,7 +376,8 @@
                                             <li>Seniority Level</li>
                                             <li>Function</li>
                                         </ul>
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
+                                            href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -380,9 +415,10 @@
                                             <li>Get exposure</li>
                                             <li>Handpicked opportunities</li>
                                             <li>Statistics from your ideal clients</li>
-                                            
+
                                         </ul>
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
+                                            href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +452,8 @@
                                             <li>Export and share</li>
                                             <li>Nurture over a long periods</li>
                                         </ul>
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
+                                            href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -472,102 +509,97 @@
     </div>
     <!-- End Video Area -->
 
-  <!-- Start Pricing Area
+    <!-- Start Pricing Area
     ============================================= -->
     <div style="_display:none;" id="pricing" class="pricing-area default-padding bg-gray">
-            <div class="container">
-              <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
-                  <div class="site-heading text-center">
-                    <h2>Campaign Packages</h2>
-                    <p style="_display: none;">
-                      All monthly packages include 4hrs of support. <br>
-                      In case your ideal clients are not active on LinkedIn we have a 100% money back guarantee.
-                    </p>
-                  </div>
+                    <div class="site-heading text-center">
+                        <h2>Campaign Packages</h2>
+                        <p style="_display: none;">
+                            All monthly packages include 4hrs of support. <br>
+                            In case your ideal clients are not active on LinkedIn we have a 100% money back guarantee.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
+            </div>
+            <div class="row">
                 <div class="col-md-12">
-                  <div class="pricing-items">
-                    <div class="col-lg-4 col-md-4 single-item">
-                        <div class="pricing-item">
-                            <ul>
-                              <li class="pricing-header">
-                                <h4>Pre paid</h4>
-                                <h2><sup>$</sup>99</h2>
-                                <a class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Start Campaign</a>
-                              </li>
-                              <li><i class="fas fa-check"></i> Analyze 300 profiles</li>
-                              <li><i class="fas fa-check"></i> Lead Scoring</li>
-                              <li><i class="fas fa-check"></i> 2 ideal client lists</li>
-                              <li><i class="fas fa-check"></i> Export</li>
-                              <li><i class="fas fa-check"></i> Statistics</li>
-                              <li style="display: none;" class="footer">
-                                <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
-                              </li>
-                            </ul>
-                          </div>
+                    <div class="pricing-items">
+                        <div class="col-lg-4 col-md-4 single-item">
+                            <div class="pricing-item">
+                                <ul>
+                                    <li class="pricing-header">
+                                        <h4>Pre paid</h4>
+                                        <h2><sup>$</sup>99</h2>
+                                        <a data-price="prepaid" class="btn btn-theme border btn-md start-campaign"
+                                            href="index.html#pricing">Start Campaign</a>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Analyze 300 profiles</li>
+                                    <li><i class="fas fa-check"></i> Lead Scoring</li>
+                                    <li><i class="fas fa-check"></i> 2 ideal client lists</li>
+                                    <li><i class="fas fa-check"></i> Export</li>
+                                    <li><i class="fas fa-check"></i> Statistics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 single-item">
+                            <div class="pricing-item">
+                                <ul>
+                                    <li class="pricing-header">
+                                        <h4>Professional</h4>
+                                        <h2><sup>$</sup>199 /mo</h2>
+                                        <a data-price="professional" class="btn btn-theme border btn-md start-campaign"
+                                            href="index.html#pricing">Start Campaign</a>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Analyze 50 profiles per day</li>
+                                    <li><i class="fas fa-check"></i> Curate results*</li>
+                                    <li><i class="fas fa-check"></i> Analyze 30 pieces of content per day**</li>
+                                    <li><i class="fas fa-check"></i> 4 ideal client lists</li>
+                                    <li><i class="fas fa-check"></i> Lead Scoring</li>
+                                    <li><i class="fas fa-check"></i> Export</li>
+                                    <li><i class="fas fa-check"></i> Statistics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 single-item">
+                            <div class="pricing-item">
+                                <ul>
+                                    <li class="pricing-header">
+                                        <h4>Premium</h4>
+                                        <h2><sup>$</sup>499 /mo</h2>
+                                        <a data-price="premium" class="btn btn-theme border btn-md start-campaign"
+                                            href="index.html#pricing">Start Campaign</a> 
+                                    </li>
+                                    <li><i class="fas fa-check"></i> 10 pieces of content </li>
+                                    <li><i class="fas fa-check"></i> Analyze 50 profiles per day</li>
+                                    <li><i class="fas fa-check"></i> Curate results*</li>
+                                    <li><i class="fas fa-check"></i> Analyze 30 pieces of content per day**</li>
+                                    <li><i class="fas fa-check"></i> 4 ideal client lists</li>
+                                    <li><i class="fas fa-check"></i> Managed Lead Scoring</li>
+                                    <li><i class="fas fa-check"></i> Campaign triggers</li>
+                                    <li><i class="fas fa-check"></i> 300 LinkedIn Connection</li>
+                                    <li><i class="fas fa-check"></i> 150 LinkedIn Messages</li>
+                                    <li><i class="fas fa-check"></i> Export</li>
+                                    <li><i class="fas fa-check"></i> Statistics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 _text-center pricing-item">
+                            <div style="font-size: 13px;" </div> <b>* Curate results</b> means we will look at every
+                                profile and check if it really qualifies <br>
+                                <b>** Analyzed content</b> means that we will categorize, qualify and inform you if
+                                there are any good oppertunities for you to engage with.
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 single-item">
-                        <div class="pricing-item">
-                            <ul>
-                              <li class="pricing-header">
-                                <h4>Professional</h4>
-                                <h2><sup>$</sup>199 /mo</h2>
-                                <a class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Start Campaign</a>
-                              </li>
-                              <li><i class="fas fa-check"></i> Analyze 50 profiles per day</li>
-                              <li><i class="fas fa-check"></i> Curate results*</li>
-                              <li><i class="fas fa-check"></i> Analyze 30 pieces of content per day**</li>
-                              <li><i class="fas fa-check"></i> 4 ideal client lists</li>
-                              <li><i class="fas fa-check"></i> Lead Scoring</li>
-                              <li><i class="fas fa-check"></i> Export</li>
-                              <li><i class="fas fa-check"></i> Statistics</li>
-                              <li style="display: none;" class="footer">
-                                <a class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Get Started</a>
-                              </li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 single-item">
-                      <div class="pricing-item">
-                        <ul>
-                          <li class="pricing-header">
-                            <h4>Premium</h4>
-                            <h2><sup>$</sup>499 /mo</h2>
-                            <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Start Campaign</a>
-                          </li>
-                          <li><i class="fas fa-check"></i> 10 pieces of content  </li>
-                          <li><i class="fas fa-check"></i> Analyze 50 profiles per day</li>
-                          <li><i class="fas fa-check"></i> Curate results*</li>
-                          <li><i class="fas fa-check"></i> Analyze 30 pieces of content per day**</li>
-                          <li><i class="fas fa-check"></i> 4 ideal client lists</li>
-                          <li><i class="fas fa-check"></i> Managed Lead Scoring</li>
-                          <li><i class="fas fa-check"></i> Campaign triggers</li>
-                          <li><i class="fas fa-check"></i> 300 LinkedIn Connection</li>
-                          <li><i class="fas fa-check"></i> 150 LinkedIn Messages</li>
-                          <li><i class="fas fa-check"></i> Export</li>
-                          <li><i class="fas fa-check"></i> Statistics</li>
-                          <li style="display: none;" class="footer">
-                            <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-12 _text-center pricing-item">
-                    <div style="font-size: 13px;"</div>
-                        <b>* Curate results</b> means we will look at every profile and check if it really qualifies <br>
-                        <b>** Analyzed content</b> means that we will categorize, qualify and  inform you if there are any good oppertunities for you to engage with.
-                      </div>
-                    </div>
-                  </div>
 
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- End Pricing Area -->
+        </div>
+    </div>
+    <!-- End Pricing Area -->
     <!-- Start Testimonials Area
     ============================================= -->
     <div class="testimonials-area bg-gray default-padding">
@@ -596,21 +628,22 @@
                   </div>
                 </div>
                 -->
-                 
-                <div class="item">
-                  <div class="thumb">
-                    <img src="assets/img/dan_nikas.jpg" alt="Thumb">
-                  </div>
-                  <div class="info">
-                    <p>
-                        The team is very responsive and always ready to find solutions for my situation. Without them I would have wasted huge amounts of time.
-                        You did an amazing job thanks,
-                    </p>
-                    <h4>Dan Nikas</h4>
-                    <span>Elite brands</span>
-                  </div>
-                </div>
-                <!-- End Single Item -->
+
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/dan_nikas.jpg" alt="Thumb">
+                            </div>
+                            <div class="info">
+                                <p>
+                                    The team is very responsive and always ready to find solutions for my situation.
+                                    Without them I would have wasted huge amounts of time.
+                                    You did an amazing job thanks,
+                                </p>
+                                <h4>Dan Nikas</h4>
+                                <span>Elite brands</span>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
                         <!-- Single Item -->
                         <div class="item">
                             <div class="thumb">
@@ -882,7 +915,8 @@
                                 <i>
                                     Good communication is a priority to us. That’s why we made sure we are reachable in
                                     the most
-                                    convenient ways. Choose between sending us a quick message, an email or a video call!</i>
+                                    convenient ways. Choose between sending us a quick message, an email or a video
+                                    call!</i>
                             </p>
                             <div style="display:none;" class="newsletter">
                                 <form action="#">
@@ -922,10 +956,10 @@
                                 </li>
                                 -->
                                 <li>
-                                        <a class="smooth-menu" href="#pricing">Pricing</a>
-                                    </li>
+                                    <a class="smooth-menu" href="#pricing">Pricing</a>
+                                </li>
                                 <li>
-                                        <a class="smooth-menu" href="#features">Support</a>
+                                    <a class="smooth-menu" href="#features">Support</a>
                                 </li>
                             </ul>
                         </div>
@@ -1011,9 +1045,25 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
     <script>
-        $(".get-started_org").click(function (event) {
+        $(".start-campaign").click(function (event) {
             event.preventDefault();
+            var pricetype = event.target.dataset.price;
             $('.modal').modal('show');
+            if(pricetype == 'prepaid'){
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-prepaid").removeClass("hide");
+            }
+            if(pricetype == 'professional'){ 
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").removeClass("hide");
+            }
+            if(pricetype == 'premium'){
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-premium").removeClass("hide");
+            }
         });
     </script>
 </body>
