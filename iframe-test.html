@@ -6,32 +6,11 @@
             padding: 0px;
             margin: 0px;
         }
-
-        iframe {
-            height: -webkit-fill-available;
-            width: -webkit-fill-available;
-            _width: 1920px;
-            _height: 1080px;
-            position: absolute;
-            _left:-5000px;
-        }
     </style>
 </head>
 
 <body>
 
-    <script>
-
-        function foo(url) {
-            var iframe = document.createElement("iframe");
-            iframe.src = url;
-            iframe.name = "linkedin-wrapper"
-            document.body.appendChild(iframe);
-            //return frames["frame"].location.host;
-        }
-        foo("https://www.linkedin.com/notifications/");
-
-    </script>
 </body>
 
 </html>
