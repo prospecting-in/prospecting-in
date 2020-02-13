@@ -48,6 +48,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
     <style>
+
+        #payment-unlimited table, #payment-premium table {
+            width: 100%;
+        }
+
+        #payment-unlimited input[type=text], #payment-premium input[type=text] {
+            width: 80%;
+            border: 2px solid #e7e7e7;
+        }
+
         .pricing-area .pricing-item li i {
             margin-right: 5px;
             color: #2568ef;
@@ -128,6 +138,16 @@
 
                     <!--payment button-->
 
+                    <div class="hide pricing-header pricing-box text-center" id="payment-free">
+                        <div class="pricing-popup">
+                            <h4>Get our free app</h4>
+                            <h2><sup></sup>&nbsp;</h2>
+
+                            <a class="btn btn-theme border btn-md" style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" href="https://chrome.google.com/webstore/detail/linkedin-engagement-track/fdkablkeafaegdohgdcpfljllilfcmih?hl=en">LinkedIn engagement tracking</a>
+
+                        </div>
+                    </div>
+
 
                     <div class="hide pricing-header pricing-box text-center" id="payment-prepaid">
                         <div class="pricing-popup">
@@ -143,6 +163,28 @@
                                 height="1">
                         </form>
                     </div>
+
+
+
+                    <div class="hide pricing-header pricing-box text-center" id="payment-unlimited">
+                        <div class="pricing-popup">
+                            <h4>Unlimited</h4>
+                            <h2><sup>$</sup>9.95 /mo</h2>
+                        </div>
+
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="MZUZK6RGXYFSN">
+                            <table>
+                            <tr><td><input type="hidden" name="on0" value="Contact email">Contact email</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                            
+                        
+                    </div>
+
 
                     <div class="hide pricing-header pricing-box text-center" id="payment-professional">
                         <div class="pricing-popup">
@@ -167,11 +209,13 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="UM5TAGCK5LSR4">
-                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
-                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
-                                height="1">
-                        </form>
+                            <table>
+                            <tr><td><input type="hidden" name="on0" value="Contact email">Contact email</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                            </table>
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                            
                     </div>
 
                     <!--payment button-->
@@ -321,7 +365,8 @@
                                                     <!--Register  -->
                                                 </button>
                                                 <br><br>
-                                                <a style="color: black;" class="smooth-menu" href="#freeapp">Is the App really free?</a>
+                                                <a style="color: black;" class="smooth-menu" href="#freeapp">Is the App
+                                                    really free?</a>
                                             </div>
                                         </div>
                                     </form>
@@ -528,7 +573,7 @@
 
     <!-- Start Pricing Area
     ============================================= -->
-    <div style="display:none;" id="pricing" class="pricing-area default-padding bg-gray">
+    <div style="_display:none;" id="pricing" class="pricing-area default-padding bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
@@ -548,13 +593,13 @@
                             <div class="pricing-item">
                                 <ul>
                                     <li class="pricing-header">
-                                        <h4>Pre paid</h4>
-                                        <h2><sup>$</sup>25</h2>
-                                        <a data-price="prepaid" class="btn btn-theme border btn-md start-campaign"
+                                        <h4>FREE</h4>
+                                        <h2><sup></sup>&nbsp;</h2>
+                                        <a data-price="free" class="btn btn-theme border btn-md start-campaign"
                                             href="index.html#pricing">Start Campaign</a>
                                     </li>
                                     <li><i class="fas fa-check"></i> Analyze 100 profiles</li>
-                                    <li><i class="fas fa-check"></i> 2 ideal client searches</li>
+                                    <li><i class="fas fa-check"></i> Track 25 ideal clients</li>
                                     <li><i class="fas fa-check"></i> Lead Scoring</li>
                                     <li><i class="fas fa-check"></i> Export</li>
                                     <li><i class="fas fa-check"></i> Statistics</li>
@@ -565,15 +610,13 @@
                             <div class="pricing-item">
                                 <ul>
                                     <li class="pricing-header">
-                                        <h4>Professional</h4>
-                                        <h2><sup>$</sup>49 /mo</h2>
-                                        <a data-price="professional" class="btn btn-theme border btn-md start-campaign"
+                                        <h4>unlimited</h4>
+                                        <h2><sup>$</sup>9.95 /mo</h2>
+                                        <a data-price="unlimited" class="btn btn-theme border btn-md start-campaign"
                                             href="index.html#pricing">Start Campaign</a>
                                     </li>
-                                    <li><i class="fas fa-check"></i> Analyze 20 new profiles on activity per day</li>
-                                    <li><i class="fas fa-check"></i> Curate results*</li>
-                                    <li><i class="fas fa-check"></i> Analyze 10 profiles on content per day**</li>
-                                    <li><i class="fas fa-check"></i> 2 ideal client searches</li>
+                                    <li><i class="fas fa-check"></i> Analyze unlimited profiles</li>
+                                    <li><i class="fas fa-check"></i> Track unlimited ideal clients</li>
                                     <li><i class="fas fa-check"></i> Lead Scoring</li>
                                     <li><i class="fas fa-check"></i> Export</li>
                                     <li><i class="fas fa-check"></i> Statistics</li>
@@ -584,15 +627,15 @@
                             <div class="pricing-item">
                                 <ul>
                                     <li class="pricing-header">
-                                        <h4>Premium</h4>
+                                        <h4>VA Premium</h4>
                                         <h2><sup>$</sup>99 /mo</h2>
                                         <a data-price="premium" class="btn btn-theme border btn-md start-campaign"
                                             href="index.html#pricing">Start Campaign</a>
                                     </li>
-                                    <li><i class="fas fa-check"></i> Analyze 40 new profiles on activity per day</li>
-                                    <li><i class="fas fa-check"></i> Curate results*</li>
-                                    <li><i class="fas fa-check"></i> Analyze 30 profiles on content per day**</li>
-                                    <li><i class="fas fa-check"></i> 6 ideal client searches</li>
+                                    <li><i class="fas fa-check"></i> 25 Handpicked Ideal client suggestions *</li>
+                                    <li><i class="fas fa-check"></i> 60 Curateted content suggestions *</li>
+                                    <li><i class="fas fa-check"></i> Analyze unlimited profiles</li>
+                                    <li><i class="fas fa-check"></i> Track unlimited ideal clients</li>
                                     <li><i class="fas fa-check"></i> Lead Scoring</li>
                                     <li><i class="fas fa-check"></i> Export</li>
                                     <li><i class="fas fa-check"></i> Statistics</li>
@@ -600,11 +643,12 @@
                             </div>
                         </div>
                         <div class="col-12 _text-center pricing-item">
-                            <div style="font-size: 13px;" </div> <b>* Curate results</b> means we will look at every
+                            <div style="font-size: 13px;" </div> <b>* Handpicked Ideal client suggestions</b> means we
+                                will look at every
                                 profile and check if it really qualifies <br>
-                                <b>** Analyzed profiles on content</b> means that we will categorize, qualify and inform
-                                you if
-                                there are any good oppertunities for you to engage with.
+                                <b>** Curateted content suggestions</b> means that we will categorize, qualify and
+                                inform
+                                you if there are any good content oppertunities for you to engage with.
                             </div>
                         </div>
                     </div>
@@ -919,14 +963,16 @@
                 <div class="col-md-8 col-md-offset-2 info">
                     <h3>Is the LinkedIn Engagement App really <span>FREE ?</span></h3>
                     <p>
-                        We are providing a full featured app the only limit we place on the app is the amount of profiles you can track.
-                        Currently you can track and nurture 25 profiles with the free app. 
-                        We are planning to provide a paid version with an unlimited amount of profiles you can track combined with content curation.
+                        We are providing a full featured app the only limit we place on the app is the amount of
+                        profiles you can track.
+                        Currently you can track and nurture 25 profiles with the free app.
+                        We are planning to provide a paid version with an unlimited amount of profiles you can track
+                        combined with content curation.
                         The free version will always stay free.
                     </p>
                     <p><a style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;"
-                        class="btn circle border btn-md get-started smooth-menu"
-                        href="index.html#pricing">Get Started</a></p>
+                            class="btn circle border btn-md get-started smooth-menu" href="index.html#pricing">Get
+                            Started</a></p>
                 </div>
             </div>
         </div>
@@ -1087,18 +1133,38 @@
             event.preventDefault();
             var pricetype = event.target.dataset.price;
             $('.modal').modal('show');
-            if (pricetype == 'prepaid') {
-                $("#payment-premium").addClass("hide");
-                $("#payment-professional").addClass("hide");
-                $("#payment-prepaid").removeClass("hide");
-            }
-            if (pricetype == 'professional') {
+            if (pricetype == 'free') {
                 $("#payment-prepaid").addClass("hide");
                 $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-free").removeClass("hide");
+            }
+            if (pricetype == 'prepaid') {
+                $("#payment-free").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-prepaid").removeClass("hide");
+            }
+            if (pricetype == 'unlimited') {
+                $("#payment-free").addClass("hide");
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").removeClass("hide");
+            }
+            if (pricetype == 'professional') {
+                $("#payment-free").addClass("hide");
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
                 $("#payment-professional").removeClass("hide");
             }
             if (pricetype == 'premium') {
+                $("#payment-free").addClass("hide");
                 $("#payment-prepaid").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
                 $("#payment-professional").addClass("hide");
                 $("#payment-premium").removeClass("hide");
             }
