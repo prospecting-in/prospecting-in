@@ -111,6 +111,11 @@
             border: 0px;
             margin-top: 10px;
         }
+
+
+        #payment-free  input {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -153,10 +158,10 @@
                                     <input id="free-account-email"  type="text"  maxlength="200"></td></tr>
                                 <tr><td>INVITE CODE</td></tr>
                                     <tr><td>
-                                        <input id="free-account-code"  type="text"  maxlength="200"></td></tr>
+                                        <input readonly id="free-account-code"  type="text"  maxlength="200"></td></tr>
                                 </table>
                             </form>
-                            <a id="free-account" class="btn btn-theme border btn-md" style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" href="https://chrome.google.com/webstore/detail/linkedin-engagement-track/fdkablkeafaegdohgdcpfljllilfcmih?hl=en">DOWNLOAD</a>
+                            <a id="free-account" class="btn btn-theme border btn-md" style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" href="https://chrome.google.com/webstore/detail/linkedin-engagement-track/fdkablkeafaegdohgdcpfljllilfcmih?hl=en">SIGNUP</a>
 
                         </div>
                     </div>
@@ -1245,6 +1250,21 @@ function isEmail(email) {
                 $("#payment-premium").removeClass("hide");
             }
         });
+
+
+    if(location.hash.length > 1){
+      var parts = location.hash.split(':');
+      if(parts[0] == "#u"){
+        var code = parts[1];
+        console.log(code);
+        
+        setTimeout(function () {
+            document.querySelector('#pricing  li.pricing-header > a').click();
+            document.querySelector('#free-account-code').value = code;
+      }, 2000);
+      }
+    }
+
     </script>
 </body>
 
