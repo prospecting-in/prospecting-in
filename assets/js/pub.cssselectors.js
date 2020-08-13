@@ -1,3 +1,4 @@
+//{"version":"1.0.5","shasum":"93852466e51ed916b58bf689151732a225c4870f"}
 class CSSSelectors {
     static linkedin = class {
         static urnLiActivity = class {
