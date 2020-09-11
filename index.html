@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131465208-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-131465208-4');
@@ -48,72 +51,72 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
     <style>
-
-        #payment-unlimited table, #payment-premium table, #payment-free table {
+        #payment-unlimited table,
+        #payment-premium table,
+        #payment-free table {
             width: 100%;
         }
-
-        #payment-unlimited input[type=text], #payment-premium input[type=text], #payment-free input[type=text] {
+        
+        #payment-unlimited input[type=text],
+        #payment-premium input[type=text],
+        #payment-free input[type=text] {
             width: 80%;
             border: 2px solid #e7e7e7;
         }
-
+        
         .pricing-area .pricing-item li i {
             margin-right: 5px;
             color: #2568ef;
             margin-left: 10px;
         }
-
+        
         .feature-box .site-heading p {
             margin: 0;
             box-sizing: border-box;
             padding: 10px;
         }
-
+        
         .site-heading {
             box-sizing: border-box;
             padding: 5px;
         }
-
+        
         .team-area.radius-less .team-items .item .thumb {
             border-radius: inherit;
             padding: 70px;
             padding-bottom: 20px;
         }
-
-
-
+        
         .testimonial-items .item .thumb {
             height: 250px;
             width: 250px;
         }
-
+        
         .modal-body {
             padding: 60px;
             padding-bottom: 0px;
         }
-
+        
         .pricing-area .pricing-item .footer {
             text-align: left;
         }
-
+        
         .pricing-popup {
             text-transform: uppercase;
         }
-
+        
         .pricing-box {
             border: 1px solid #ddd;
             padding: 35px;
             margin: 35px;
         }
-
+        
         .pricing-box form>input[type=image] {
             border: 0px;
             margin-top: 10px;
         }
-
-
-        #payment-free  input {
+        
+        #payment-free input {
             text-align: center;
         }
     </style>
@@ -124,8 +127,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="site-heading modal-body">
@@ -150,15 +152,27 @@
 
                             <form>
                                 <table>
-                                <tr><td>NAME</td></tr>
-                                <tr><td>
-                                    <input id="free-account-name"  type="text"  maxlength="200"></td></tr>
-                                <tr><td>EMAIL</td></tr>
-                                <tr><td>
-                                    <input id="free-account-email"  type="text"  maxlength="200"></td></tr>
-                                <tr><td>INVITE CODE</td></tr>
-                                    <tr><td>
-                                        <input readonly id="free-account-code"  type="text"  maxlength="200"></td></tr>
+                                    <tr>
+                                        <td>NAME</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="free-account-name" type="text" maxlength="200"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMAIL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="free-account-email" type="text" maxlength="200"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>INVITE CODE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input readonly id="free-account-code" type="text" maxlength="200"></td>
+                                    </tr>
                                 </table>
                             </form>
                             <a id="free-account" class="btn btn-theme border btn-md" style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" href="https://chrome.google.com/webstore/detail/linkedin-engagement-track/fdkablkeafaegdohgdcpfljllilfcmih?hl=en">SIGNUP</a>
@@ -175,10 +189,8 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="C3UA9NC995FX2">
-                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
-                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
-                                height="1">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
                         </form>
                     </div>
 
@@ -194,13 +206,18 @@
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="MZUZK6RGXYFSN">
                             <table>
-                            <tr><td><input type="hidden" name="on0" value="Contact email">CONTACT EMAIL</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Contact email">CONTACT EMAIL</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="os0" maxlength="200"></td>
+                                </tr>
                             </table>
                             <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                            </form>
-                            
-                        
+                        </form>
+
+
                     </div>
 
 
@@ -212,10 +229,8 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="5CCCRSXYQF9C8">
-                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif"
-                                border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1"
-                                height="1">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
                         </form>
                     </div>
 
@@ -228,12 +243,17 @@
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="UM5TAGCK5LSR4">
                             <table>
-                            <tr><td><input type="hidden" name="on0" value="Contact email">CONTACT EMAIL</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                                <tr>
+                                    <td><input type="hidden" name="on0" value="Contact email">CONTACT EMAIL</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="os0" maxlength="200"></td>
+                                </tr>
                             </table>
                             <input type="image" src="https://www.paypalobjects.com/en_GB/TH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                            </form>
-                            
+                        </form>
+
                     </div>
 
                     <!--payment button-->
@@ -242,8 +262,7 @@
                         <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
                         <ul style="display: flex;justify-content: center;">
                             <li class="linkedin">
-                                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
-                                    href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
+                                <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
                                     Owner</a><br>
                                 <i class="fas fa-envelope"></i> kai@prospecting.in <br>
                             </li>
@@ -320,7 +339,8 @@
                             <a class="smooth-menu" href="index.html#team">Support</a>
                         </li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
 
         </nav>
@@ -331,8 +351,7 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div id="pricing" class="banner-area auto-height inc-form text-center text-light shadow theme-hard bg-fixed"
-        style="background-image: url(assets/img/banner/4.jpg);">
+    <div id="pricing" class="banner-area auto-height inc-form text-center text-light shadow theme-hard bg-fixed" style="background-image: url(assets/img/banner/4.jpg);">
         <div class="box-table">
             <div class="box-cell">
                 <div class="container">
@@ -342,12 +361,8 @@
                                 <h1>A LinkedIn strategy that works!</h1>
                                 <h2 style="font-weight: bold;">Build a valuable network with real relationships </h2>
                                 <p>
-                                    The most powerful way of letting your ideal clients learn about you is to directly
-                                    engage with them.
-                                    We make sure you only spend time on people that are actually active and are
-                                    interested in engagement.</p>
-                                <a class="hide btn circle btn-light border btn-md get-started smooth-menu"
-                                    href="index.html#pricing">Get Started</a>
+                                    The most powerful way of letting your ideal clients learn about you is to directly engage with them. We make sure you only spend time on people that are actually active and are interested in engagement.</p>
+                                <a class="hide btn circle btn-light border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
 
                             </div>
                             <!-- Start Form -->
@@ -363,16 +378,14 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Your name*" name="name"
-                                                        type="text">
+                                                    <input class="form-control" placeholder="Your name*" name="name" type="text">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Your email*" type="email"
-                                                        name="email">
+                                                    <input class="form-control" placeholder="Your email*" type="email" name="email">
                                                 </div>
                                             </div>
                                         </div>
@@ -383,8 +396,7 @@
                                                     <!--Register  -->
                                                 </button>
                                                 <br><br>
-                                                <a style="color: black;" class="smooth-menu" href="#freeapp">Is the App
-                                                    really free?</a>
+                                                <a style="color: black;" class="smooth-menu" href="#freeapp"></a>
                                             </div>
                                         </div>
                                     </form>
@@ -412,11 +424,7 @@
                         <br><br><br>
                         <h2>A strategy that actually works</h2>
                         <p>
-                            Your Ideal clients make decisions based on their emotions. They want to know
-                            about your story
-                            and not just about the product or service. Why they should trust you, why
-                            they should buy from
-                            you.
+                            Your Ideal clients make decisions based on their emotions. They want to know about your story and not just about the product or service. Why they should trust you, why they should buy from you.
                         </p>
                     </div>
                 </div>
@@ -437,8 +445,7 @@
                                             <h2>Ideal Client</h2>
                                         </div>
                                         <p>
-                                            Our team and CEM tool will research your ideal clients and analyze their
-                                            posts so you can engage and nurture them.
+                                            Our team and CEM tool will research your ideal clients and analyze their posts so you can engage and nurture them.
                                         </p>
                                         <p>
                                             Build a valuable network with real relationships.
@@ -456,8 +463,7 @@
                                             <li>Function</li>
                                         </ul>
 
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
-                                            href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -478,16 +484,11 @@
                                             <h2>Engage</h2>
                                         </div>
                                         <p>
-                                            What are you doing to tell others about your story, how do you make them see
-                                            and recognize you.
-                                            When you connect with ideal clients they should have an interest in you.
-                                            The most powerful way of letting your ideal clients learn about you is to
-                                            directly engage with
-                                            them.</p>
+                                            What are you doing to tell others about your story, how do you make them see and recognize you. When you connect with ideal clients they should have an interest in you. The most powerful way of letting your ideal clients learn about you is to directly
+                                            engage with them.
+                                        </p>
                                         <p>
-                                            LinkedIn is perfect for this. You can introduce yourself and show your ideas
-                                            and knowledge with just a few comments that will
-                                            inspire and motivate them to do business with you.
+                                            LinkedIn is perfect for this. You can introduce yourself and show your ideas and knowledge with just a few comments that will inspire and motivate them to do business with you.
                                         </p>
                                         <ul>
 
@@ -497,8 +498,7 @@
                                             <li>Statistics from your ideal clients</li>
 
                                         </ul>
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
-                                            href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -519,12 +519,9 @@
                                             <h2>Nurture</h2>
                                         </div>
                                         <p>
-                                            Manage all of your conversations in one convenient dashboard, and get a
-                                            bird’s-eye view of what’s happening in your LinkedIn account.</p>
+                                            Manage all of your conversations in one convenient dashboard, and get a bird’s-eye view of what’s happening in your LinkedIn account.</p>
                                         <p>
-                                            We have created a tool that allows you to be a part of the conversation and
-                                            never miss when your
-                                            ideal client shares valuable opportunities </p>
+                                            We have created a tool that allows you to be a part of the conversation and never miss when your ideal client shares valuable opportunities </p>
                                         <ul>
                                             <li>Lead scoring</li>
                                             <li>Activity statistics</li>
@@ -532,8 +529,7 @@
                                             <li>Export and share</li>
                                             <li>Nurture over a long periods</li>
                                         </ul>
-                                        <a class="btn btn-theme border btn-md get-started smooth-menu"
-                                            href="index.html#pricing">Get Started</a>
+                                        <a class="btn btn-theme border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
                                     </div>
                                 </div>
                             </div>
@@ -560,8 +556,7 @@
                     <div class="col-md-6 info">
                         <h2>Engagement starts with understanding</h2>
                         <p>
-                            Our team and CEM tool will research and analyze the posts of your ideal clients so you can
-                            engage and nurture them.
+                            Our team and CEM tool will research and analyze the posts of your ideal clients so you can engage and nurture them.
 
                         </p>
                         <h4>Advanced Features</h4>
@@ -573,13 +568,11 @@
                             <li>Nurture your ideal client over a long period</li>
                             <li>Be more organized more effective and save huge amounts of time</li>
                         </ul>
-                        <a class="btn circle btn-light border btn-md get-started smooth-menu"
-                            href="index.html#pricing">Get Started</a>
+                        <a class="btn circle btn-light border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
                     </div>
                     <div class="col-md-6 video">
                         <img src="assets/img/app/app-2.png" alt="Thumb">
-                        <a style="display: none;" class="popup-youtube video-play-button"
-                            href="https://www.youtube.com/watch?v=owhuBrGIOsE">
+                        <a style="display: none;" class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=owhuBrGIOsE">
                             <i class="fa fa-play"></i>
                         </a>
                     </div>
@@ -598,8 +591,7 @@
                     <div class="site-heading text-center">
                         <h2>Campaign Packages</h2>
                         <p style="display: none;">
-                            All monthly packages include 4hrs of support. <br>
-                            In case your ideal clients are not active on LinkedIn we have a 100% money back guarantee.
+                            All monthly packages include 4hrs of support. <br> In case your ideal clients are not active on LinkedIn we have a 100% money back guarantee.
                         </p>
                     </div>
                 </div>
@@ -611,13 +603,12 @@
                             <div class="pricing-item">
                                 <ul>
                                     <li class="pricing-header">
-                                        <h4>INVITE</h4>
-                                        <h2><sup></sup>&nbsp;</h2>
-                                        <a data-price="free" class="btn btn-theme border btn-md start-campaign"
-                                            href="index.html#pricing">Start Campaign</a>
+                                        <h4>Prospecting</h4>
+                                        <h2><sup>$</sup>125 /mo</h2>
+                                        <a data-price="starter" class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Start Campaign</a>
                                     </li>
-                                    <li><i class="fas fa-check"></i> Analyze 100 profiles</li>
-                                    <li><i class="fas fa-check"></i> Track 50 ideal clients</li>
+                                    <li><i class="fas fa-check"></i> Analyze unlimited profiles</li>
+                                    <li><i class="fas fa-check"></i> Track unlimited ideal clients</li>
                                     <li><i class="fas fa-check"></i> Lead Scoring</li>
                                     <li><i class="fas fa-check"></i> Export</li>
                                     <li><i class="fas fa-check"></i> Statistics</li>
@@ -629,10 +620,11 @@
                                 <ul>
                                     <li class="pricing-header">
                                         <h4>unlimited</h4>
-                                        <h2><sup>$</sup>9.95 /mo</h2>
-                                        <a data-price="unlimited" class="btn btn-theme border btn-md start-campaign"
-                                            href="index.html#pricing">Start Campaign</a>
+                                        <h2><sup>$</sup>350 /mo</h2>
+                                        <a data-price="unlimited" class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Start Campaign</a>
                                     </li>
+                                    <li><i class="fas fa-check"></i> Engagement</li>
+                                    <li><i class="fas fa-check"></i> 60 Curateted content suggestions *</li>
                                     <li><i class="fas fa-check"></i> Analyze unlimited profiles</li>
                                     <li><i class="fas fa-check"></i> Track unlimited ideal clients</li>
                                     <li><i class="fas fa-check"></i> Lead Scoring</li>
@@ -646,11 +638,12 @@
                                 <ul>
                                     <li class="pricing-header">
                                         <h4>VA Premium</h4>
-                                        <h2><sup>$</sup>99 /mo</h2>
-                                        <a data-price="premium" class="btn btn-theme border btn-md start-campaign"
-                                            href="index.html#pricing">Start Campaign</a>
+                                        <h2><sup>$</sup>750 /mo</h2>
+                                        <a data-price="premium" class="btn btn-theme border btn-md start-campaign" href="index.html#pricing">Start Campaign</a>
                                     </li>
-                                    <li><i class="fas fa-check"></i> 25 Handpicked Ideal client suggestions *</li>
+                                    <li><i class="fas fa-check"></i> Add active employee to your company</li>
+                                    <li><i class="fas fa-check"></i> Video posts and Text posts</li>
+                                    <li><i class="fas fa-check"></i> Engagement</li>
                                     <li><i class="fas fa-check"></i> 60 Curateted content suggestions *</li>
                                     <li><i class="fas fa-check"></i> Analyze unlimited profiles</li>
                                     <li><i class="fas fa-check"></i> Track unlimited ideal clients</li>
@@ -661,22 +654,13 @@
                             </div>
                         </div>
                         <div class="col-12 _text-center pricing-item">
-                            <div style="font-size: 13px;" </div> <b>* Handpicked Ideal client suggestions</b> means we
-                                will look at every
-                                profile and check if it really qualifies <br>
-                                <b>** Curateted content suggestions</b> means that we will categorize, qualify and
-                                inform
-                                you if there are any good content oppertunities for you to engage with.
+                            <div style="font-size: 13px;" </div> <b>* Handpicked Ideal client suggestions</b> means we will look at every profile and check if it really qualifies <br>
+                                <b>** Curateted content suggestions</b> means that we will categorize, qualify and inform you if there are any good content oppertunities for you to engage with.
                                 <br>
-                                <b>*** The Prospecting Invite program</b>  is designed to give you the tools to share Prospecting with more of your friends so more people will know and use Prospecting for free.
-                                    
-                                    You can extend your free usage period of Prospecting by inviting your friends to Prospecting. You can invite an unlimited number of people and each time someone accepts your invitation, installs Prospecting and signs up with an account that didn't exist before, you both will get trial extension.
-                                    
-                                    For each accepted invitation, you get additional 2 months of trial extension and your referal gets additional 1 month.
-                                    
-                                    To get the free months, your account should be on the free plan at the moment of the invitation being accepted.
-                                    
-                                    In case you are on a paid plan at that moment, you won't get any free months from that referral, but he/she will get one month of free.
+                                <b>*** The Prospecting Invite program</b> is designed to give you the tools to share Prospecting with more of your friends so more people will know and use Prospecting for free. You can extend your free usage period of
+                                Prospecting by inviting your friends to Prospecting. You can invite an unlimited number of people and each time someone accepts your invitation, installs Prospecting and signs up with an account that didn't exist before,
+                                you both will get trial extension. For each accepted invitation, you get additional 2 months of trial extension and your referal gets additional 1 month. To get the free months, your account should be on the free plan at
+                                the moment of the invitation being accepted. In case you are on a paid plan at that moment, you won't get any free months from that referral, but he/she will get one month of free.
                             </div>
                         </div>
                     </div>
@@ -721,9 +705,7 @@
                             </div>
                             <div class="info">
                                 <p>
-                                    The team is very responsive and always ready to find solutions for my situation.
-                                    Without them I would have wasted huge amounts of time.
-                                    You did an amazing job thanks,
+                                    The team is very responsive and always ready to find solutions for my situation. Without them I would have wasted huge amounts of time. You did an amazing job thanks,
                                 </p>
                                 <h4>Dan Nikas</h4>
                                 <span>Elite brands</span>
@@ -738,9 +720,7 @@
                             <div class="info">
                                 <p>
                                     I'm really happy with how fast you guys got this LinkedIn campaign setup, and how
-                                    <br>quick the feedback is.<br>
-                                    One week in, and we've already seen leads and meetings booked in<br>
-                                    It's a great service.</p>
+                                    <br>quick the feedback is.<br> One week in, and we've already seen leads and meetings booked in<br> It's a great service.</p>
                                 <h4>Charlie Price</h4>
                                 <span>The Copy Space</span>
                             </div>
@@ -767,8 +747,7 @@
                     <div class="site-heading text-center">
                         <h2>A Reliable Team</h2>
                         <p>
-                            Good communication is a priority to us. That’s why we made sure we are reachable in the most
-                            convenient ways. Choose between sending us a quick message, an email or a video call!
+                            Good communication is a priority to us. That’s why we made sure we are reachable in the most convenient ways. Choose between sending us a quick message, an email or a video call!
                         </p>
                     </div>
                 </div>
@@ -917,30 +896,16 @@
                             </h3>
                         </div>
                         <p>
-                            <br><br>
-                            Most of us only engage with people that they like and feel comfortable with, this is a very
-                            common but,
-                            will prevent you from using LinkedIn effectively to grow your business.
+                            <br><br> Most of us only engage with people that they like and feel comfortable with, this is a very common but, will prevent you from using LinkedIn effectively to grow your business.
                         </p>
                         <p>
-                            <br>
-                            We have analysed hundreds of posts and LinkedIn profiles and there are only a few “Rock
-                            stars” that really
-                            know how to play the game and win.
+                            <br> We have analysed hundreds of posts and LinkedIn profiles and there are only a few “Rock stars” that really know how to play the game and win.
                         </p>
                         <p>
-                            <br>
-                            What if you would get an list everyday with a handpicked selection of posts from your most
-                            active and
-                            ideal
-                            customers.
+                            <br> What if you would get an list everyday with a handpicked selection of posts from your most active and ideal customers.
                         </p>
                         <p>
-                            <br>
-                            You can now comment on the best content from your ideal customers and
-                            by giving
-                            them
-                            thoughtful feedback and attention you can start building a valuable relationship.
+                            <br> You can now comment on the best content from your ideal customers and by giving them thoughtful feedback and attention you can start building a valuable relationship.
                         </p>
                         <p><br><br><br>
                             <form>
@@ -954,21 +919,20 @@
                             </form>
                         </p>
 
-                        <p style="display: none;justify-content: center;"><!--display : flex-->
+                        <p style="display: none;justify-content: center;">
+                            <!--display : flex-->
                             <img style="width: 40%;    margin: 30px;" src="assets/img/team/kai.png" alt="Thumb">
-                            <ul style="display: none;justify-content: center;"><!--display : flex-->
+                            <ul style="display: none;justify-content: center;">
+                                <!--display : flex-->
                                 <li class="linkedin">
-                                    <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a
-                                        href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
+                                    <i style="margin-bottom: -3px;" class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/kanokarn-tevapitak/">Kai Tevapitak, PhD -
                                         Owner</a><br>
                                     <i class="fas fa-envelope"></i> kai@prospecting.in <br>
                                     <!-- <a style="color: #2568ef;" target="_blank"
                                         href="https://calendly.com/prospecting-in/letsmeet">Schedule
                                         a
                                         call</a> -->
-                                    <a style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;"
-                                        class="btn circle border btn-md get-started smooth-menu"
-                                        href="index.html#pricing">Get Started</a>
+                                    <a style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" class="btn circle border btn-md get-started smooth-menu" href="index.html#pricing">Get Started</a>
                                 </li>
                             </ul>
                         </p>
@@ -991,15 +955,10 @@
                 <div class="col-md-8 col-md-offset-2 info">
                     <h3>Is the LinkedIn Engagement App by invite really <span>FREE ?</span></h3>
                     <p>
-                        We are providing a full featured app the only limit we place on the app is the amount of
-                        profiles you can track.
-                        Currently you can track and nurture 25 profiles with the free app.
-                        We are planning to provide a paid version with an unlimited amount of profiles you can track
-                        combined with content curation.
-                        The invite version will always stay free.
+                        We are providing a full featured app the only limit we place on the app is the amount of profiles you can track. Currently you can track and nurture 25 profiles with the free app. We are planning to provide a paid version with an unlimited amount of profiles
+                        you can track combined with content curation. The invite version will always stay free.
                     </p>
-                    <p><a style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;"
-                            class="btn circle border btn-md get-started smooth-menu" href="index.html#pricing">Get
+                    <p><a style="color: #2568ef; border: 1px solid #cccccc; margin-top: 10px;" class="btn circle border btn-md get-started smooth-menu" href="index.html#pricing">Get
                             Started</a></p>
                 </div>
             </div>
@@ -1030,8 +989,7 @@
                             <div style="display:none;" class="newsletter">
                                 <form action="#">
                                     <div class="input-group stylish-input-group">
-                                        <input type="email" name="email" class="form-control"
-                                            placeholder="For updates enter your e-mail here">
+                                        <input type="email" name="email" class="form-control" placeholder="For updates enter your e-mail here">
                                         <button type="submit">
                                             <i class="fa fa-paper-plane"></i>
                                         </button>
@@ -1114,8 +1072,8 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <div class="col-lg-6 col-md-6 col-sm-7">
-                                     <p>&copy; Copyright 2019. All Rights Reserved by <a href="#">Prospecting.in</a> &nbsp; <a href="privacy.html">Privacy</a> &nbsp; <a href="tos.html">Terms</a></p>
-                   
+                            <p>&copy; Copyright 2019. All Rights Reserved by <a href="#">Prospecting.in</a> &nbsp; <a href="privacy.html">Privacy</a> &nbsp; <a href="tos.html">Terms</a></p>
+
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-5 text-right social">
                             <ul style="display:none;">
@@ -1158,15 +1116,14 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
     <script>
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
 
-function isEmail(email) {
-  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  return regex.test(email);
-}
 
-
-        $("#free-account").click(function (event) {
-            event.preventDefault(); 
+        $("#free-account").click(function(event) {
+            event.preventDefault();
             $('#free-account-name')
                 .css('border-color', '#e7e7e7');
             $('#free-account-email')
@@ -1174,53 +1131,53 @@ function isEmail(email) {
             $('#free-account-code')
                 .css('border-color', '#e7e7e7');
             var email = $('#free-account-email').val();
-            var name = $('#free-account-name').val(); 
-            var code = $('#free-account-code').val(); 
-            
+            var name = $('#free-account-name').val();
+            var code = $('#free-account-code').val();
+
             var proceed = true;
-            if(name == "") {
+            if (name == "") {
                 $('#free-account-name')
-                .css('border-color', '#e41919');
+                    .css('border-color', '#e41919');
                 proceed = false;
             }
-            if(code == "") {
+            if (code == "") {
                 $('#free-account-code')
-                .css('border-color', '#e41919');
+                    .css('border-color', '#e41919');
                 proceed = false;
             }
-            if(email == "") {
+            if (email == "") {
                 $('#free-account-email')
-                .css('border-color', '#e41919');
+                    .css('border-color', '#e41919');
                 proceed = false;
             }
-            if(!isEmail(email)) {
+            if (!isEmail(email)) {
                 $('#free-account-email')
-                .css('border-color', '#e41919');
+                    .css('border-color', '#e41919');
                 proceed = false;
             }
-            if(proceed) {
-            //data to be sent to server
-            post_data = {
-                'name': name,
-                'email': email,
-                'message': code,
-                'choice': "free-account-signup"
-            };
-            var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
-            var jqxhr = $.post(url, post_data, function (post_data) {
-                setTimeout(function () {
-                    window.location.replace('thank-you.html');
-                }, 500);
-                })
-                .fail(function (data) {
-                setTimeout(function () {
-                    window.location.replace('error.html');
-                }, 500);
-                });
+            if (proceed) {
+                //data to be sent to server
+                post_data = {
+                    'name': name,
+                    'email': email,
+                    'message': code,
+                    'choice': "free-account-signup"
+                };
+                var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
+                var jqxhr = $.post(url, post_data, function(post_data) {
+                        setTimeout(function() {
+                            window.location.replace('thank-you.html');
+                        }, 500);
+                    })
+                    .fail(function(data) {
+                        setTimeout(function() {
+                            window.location.replace('error.html');
+                        }, 500);
+                    });
             }
         });
 
-        $(".start-campaign").click(function (event) {
+        $(".start-campaign").click(function(event) {
             event.preventDefault();
             var pricetype = event.target.dataset.price;
             $('.modal').modal('show');
@@ -1262,19 +1219,18 @@ function isEmail(email) {
         });
 
 
-    if(location.hash.length > 1){
-      var parts = location.hash.split(':');
-      if(parts[0] == "#u"){
-        var code = parts[1];
-        console.log(code);
-        
-        setTimeout(function () {
-            document.querySelector('#pricing  li.pricing-header > a').click();
-            document.querySelector('#free-account-code').value = code;
-      }, 2000);
-      }
-    }
+        if (location.hash.length > 1) {
+            var parts = location.hash.split(':');
+            if (parts[0] == "#u") {
+                var code = parts[1];
+                console.log(code);
 
+                setTimeout(function() {
+                    document.querySelector('#pricing  li.pricing-header > a').click();
+                    document.querySelector('#free-account-code').value = code;
+                }, 2000);
+            }
+        }
     </script>
 </body>
 
