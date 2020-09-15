@@ -119,11 +119,6 @@
         #payment-free input {
             text-align: center;
         }
-        
-        #recaptcha1,
-        #recaptcha2 {
-            display: none;
-        }
     </style>
 </head>
 
@@ -383,25 +378,23 @@
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input id="leadspod-download-course-hero-name" class="form-control" placeholder="Your name*" name="name" type="text">
+                                                    <input class="form-control" placeholder="Your name*" name="name" type="text">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input id="leadspod-download-course-hero-email" class="form-control" placeholder="Your email*" type="email" name="email">
+                                                    <input class="form-control" placeholder="Your email*" type="email" name="email">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row">
-                                                <div id="recaptcha1"></div>
-                                                <button id="leadspod-download-course-hero-submit" type="submit">
+                                                <button id="submit_btn" type="submit">
                                                     Download
                                                     <!--Register  -->
                                                 </button>
-                                                <div id="msgSubmit" class="h3 text-center hidden"></div>
                                                 <br><br>
                                                 <a style="color: black;" class="smooth-menu" href="#freeapp"></a>
                                             </div>
@@ -922,12 +915,11 @@
                         <p><br><br><br>
                             <form>
                                 <input type="hidden" name="choice3" value="prospecting-footer-index-subscribe">
-                                <input id="leadspod-download-course-footer-name" type="text" name="name3" class="form-control" placeholder="Your name">
+                                <input type="text" name="name3" class="form-control" placeholder="Your name">
                                 <br>
-                                <input id="leadspod-download-course-footer-email" type="email" name="email3" class="form-control" placeholder="Your email">
+                                <input type="email" name="email3" class="form-control" placeholder="Your email">
                                 <br>
-                                <div id="recaptcha2"></div>
-                                <button id="leadspod-download-course-footer-submit" class="btn btn-theme" type="submit">GET OUR FREE
+                                <button id="submit_btn3" class="btn btn-theme" type="submit">GET OUR FREE
                                     COURSE</button>
                             </form>
                         </p>
@@ -1137,124 +1129,116 @@
         }
 
 
-        var onloadCallback = function() {
-            grecaptcha.render('recaptcha1', {
-                'sitekey': '6LelCgEVAAAAAK9gl4SaTTxbBVoVB6t0PJap8hhL',
-                'callback': function(response) {
-                    var name = $('#leadspod-download-course-hero-name').val();
-                    var email = $('#leadspod-download-course-hero-email').val();
-                    post_data = {
-                        'name': name,
-                        'email': email,
-                        'choice': "leadspod-download-course-hero"
-                    };
-                    var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
-                    var jqxhr = $.post(url, post_data, function(post_data) {
-                            setTimeout(function() {
-                                window.location.replace('thank-you.html');
-                            }, 500);
-                        })
-                        .fail(function(data) {
-                            setTimeout(function() {
-                                window.location.replace('error.html');
-                            }, 500);
-                        });
-
-                }
-            });
-            grecaptcha.render('recaptcha2', {
-                'sitekey': '6LelCgEVAAAAAK9gl4SaTTxbBVoVB6t0PJap8hhL',
-                'callback': function(response) {
-                    var email = $('#leadspod-download-course-footer-email').val();
-                    var name = $('#leadspod-download-course-footer-name').val();
-                    post_data = {
-                        'name': name,
-                        'email': email,
-                        'choice': "leadspod-download-course-footer"
-                    };
-                    var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
-                    var jqxhr = $.post(url, post_data, function(post_data) {
-                            setTimeout(function() {
-                                window.location.replace('thank-you.html');
-                            }, 500);
-                        })
-                        .fail(function(data) {
-                            setTimeout(function() {
-                                window.location.replace('error.html');
-                            }, 500);
-                        });
-                }
-            });
-        };
-        //
-
-
-        $("#leadspod-download-course-hero-submit").click(function(event) {
+        $("#free-account").click(function(event) {
             event.preventDefault();
-            $('#leadspod-download-course-hero-name')
+            $('#free-account-name')
                 .css('border-color', '#e7e7e7');
-            $('#leadspod-download-course-hero-email')
+            $('#free-account-email')
                 .css('border-color', '#e7e7e7');
-
-            var name = $('#leadspod-download-course-hero-name').val();
-            var email = $('#leadspod-download-course-hero-email').val();
+            $('#free-account-code')
+                .css('border-color', '#e7e7e7');
+            var email = $('#free-account-email').val();
+            var name = $('#free-account-name').val();
+            var code = $('#free-account-code').val();
 
             var proceed = true;
             if (name == "") {
-                $('#leadspod-download-course-hero-name')
+                $('#free-account-name')
+                    .css('border-color', '#e41919');
+                proceed = false;
+            }
+            if (code == "") {
+                $('#free-account-code')
                     .css('border-color', '#e41919');
                 proceed = false;
             }
             if (email == "") {
-                $('#leadspod-download-course-hero-email')
+                $('#free-account-email')
                     .css('border-color', '#e41919');
                 proceed = false;
             }
             if (!isEmail(email)) {
-                $('#leadspod-download-course-hero-email')
+                $('#free-account-email')
                     .css('border-color', '#e41919');
                 proceed = false;
             }
-
             if (proceed) {
-                document.querySelector("#recaptcha1").style.display = "block";
-                document.querySelector("#leadspod-download-course-hero-submit").style.display = "none";
+                //data to be sent to server
+                post_data = {
+                    'name': name,
+                    'email': email,
+                    'message': code,
+                    'choice': "free-account-signup"
+                };
+                var url = 'https://script.google.com/macros/s/AKfycbxk_Np2R_F1LlinTA33bAQPyg5XZn-rrs4M5xWC3lGRvts2kSX_/exec';
+                var jqxhr = $.post(url, post_data, function(post_data) {
+                        setTimeout(function() {
+                            window.location.replace('thank-you.html');
+                        }, 500);
+                    })
+                    .fail(function(data) {
+                        setTimeout(function() {
+                            window.location.replace('error.html');
+                        }, 500);
+                    });
             }
-
-
         });
 
-        document.querySelector("#leadspod-download-course-footer-submit").addEventListener("click", function(event) {
+        $(".start-campaign").click(function(event) {
             event.preventDefault();
-            $('#leadspod-download-course-footer-name')
-                .css('border-color', '#e7e7e7');
-            $('#leadspod-download-course-footer-email')
-                .css('border-color', '#e7e7e7');
-            var email = $('#leadspod-download-course-footer-email').val();
-            var name = $('#leadspod-download-course-footer-name').val();
-            var proceed = true;
-            if (name == "") {
-                $('#leadspod-download-course-footer-name')
-                    .css('border-color', '#e41919');
-                proceed = false;
+            var pricetype = event.target.dataset.price;
+            $('.modal').modal('show');
+            if (pricetype == 'free') {
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-free").removeClass("hide");
             }
-            if (email == "") {
-                $('#leadspod-download-course-footer-email')
-                    .css('border-color', '#e41919');
-                proceed = false;
+            if (pricetype == 'prepaid') {
+                $("#payment-free").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-prepaid").removeClass("hide");
             }
-            if (!isEmail(email)) {
-                $('#leadspod-download-course-footer-email')
-                    .css('border-color', '#e41919');
-                proceed = false;
+            if (pricetype == 'unlimited') {
+                $("#payment-free").addClass("hide");
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-unlimited").removeClass("hide");
             }
-            if (proceed) {
-                document.querySelector("#recaptcha2").style.display = "block";
-                document.querySelector("#leadspod-download-course-footer-submit").style.display = "none";
+            if (pricetype == 'professional') {
+                $("#payment-free").addClass("hide");
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-premium").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-professional").removeClass("hide");
             }
-        }, false);
+            if (pricetype == 'premium') {
+                $("#payment-free").addClass("hide");
+                $("#payment-prepaid").addClass("hide");
+                $("#payment-unlimited").addClass("hide");
+                $("#payment-professional").addClass("hide");
+                $("#payment-premium").removeClass("hide");
+            }
+        });
+
+
+        if (location.hash.length > 1) {
+            var parts = location.hash.split(':');
+            if (parts[0] == "#u") {
+                var code = parts[1];
+                console.log(code);
+
+                setTimeout(function() {
+                    document.querySelector('#pricing  li.pricing-header > a').click();
+                    document.querySelector('#free-account-code').value = code;
+                }, 2000);
+            }
+        }
     </script>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </body>
 
 </html>
